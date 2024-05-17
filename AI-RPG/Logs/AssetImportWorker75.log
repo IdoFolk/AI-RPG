@@ -1,0 +1,754 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '6000.0.2f1 (c36be92430b9) revision 12807145'; Using compiler version '193933522'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32581 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker75
+-projectPath
+C:/Users/PC/Documents/GitHub/AI-RPG/AI-RPG
+-logFile
+Logs/AssetImportWorker75.log
+-srvPort
+57376
+-job-worker-count
+13
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/PC/Documents/GitHub/AI-RPG/AI-RPG
+C:/Users/PC/Documents/GitHub/AI-RPG/AI-RPG
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [42612]  Target information:
+
+Player connection [42612]  * "[IP] 192.168.42.167 [Port] 0 [Flags] 2 [Guid] 3489003994 [EditorId] 3489003994 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VPR9IB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42612]  * "[IP] 192.168.0.191 [Port] 0 [Flags] 2 [Guid] 3489003994 [EditorId] 3489003994 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VPR9IB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42612] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [42612] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 13
+Library Redirect Path: Library/
+[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.2f1 (c36be92430b9)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/PC/Documents/GitHub/AI-RPG/AI-RPG/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 SUPER (ID=0x2783)
+    Vendor:   NVIDIA
+    VRAM:     11999 MB
+    Driver:   31.0.15.5222
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003838 seconds.
+- Loaded All Assemblies, in  0.861 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.983 seconds
+Domain Reload Profiling: 1840ms
+	BeginReloadAssembly (391ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (95ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (99ms)
+	LoadAllAssembliesAndSetupDomain (254ms)
+		LoadAssemblies (369ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (249ms)
+			TypeCache.Refresh (247ms)
+				TypeCache.ScanAssembly (232ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (983ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (801ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (298ms)
+			ProcessInitializeOnLoadMethodAttributes (463ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.054 seconds
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.400 seconds
+Domain Reload Profiling: 4421ms
+	BeginReloadAssembly (738ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (82ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (1095ms)
+		LoadAssemblies (960ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (396ms)
+			TypeCache.Refresh (265ms)
+				TypeCache.ScanAssembly (222ms)
+			BuildScriptInfoCaches (115ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2401ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1735ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (190ms)
+			ProcessInitializeOnLoadAttributes (629ms)
+			ProcessInitializeOnLoadMethodAttributes (866ms)
+			AfterProcessingInitializeOnLoad (39ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 330 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6381 unused Assets / (2.5 MB). Loaded Objects now: 7262.
+Memory consumption went from 233.9 MB to 231.4 MB.
+Total: 14.646600 ms (FindLiveObjects: 1.087100 ms CreateObjectMapping: 0.564900 ms MarkObjects: 10.498600 ms  DeleteObjects: 2.494700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 50507.493990 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Materials/Terrain/Builtin_BlinnPhong_4Splats.mat
+  artifactKey: Guid(f16db84b20aeb4b4e9ffb2429f24b831) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Materials/Terrain/Builtin_BlinnPhong_4Splats.mat using Guid(f16db84b20aeb4b4e9ffb2429f24b831) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7bbb61a8920154aab0603ddb1f205460') in 0.2087406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Utilities/GTexturingModel.cs
+  artifactKey: Guid(210a13564010c984492b49737074b00a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Utilities/GTexturingModel.cs using Guid(210a13564010c984492b49737074b00a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'bd5654ff8ee9ba7844ab4a876d30983c') in 0.0246107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Shaders/CGIncludes/PCaustic.cginc
+  artifactKey: Guid(3613dfff1c2e94e40b700e2c5277eb55) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Shaders/CGIncludes/PCaustic.cginc using Guid(3613dfff1c2e94e40b700e2c5277eb55) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '555a8ec0819f501e42b40d335ba8d017') in 0.0227261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/GroupTool/GTerrainGroupInspector.cs
+  artifactKey: Guid(f156939dd3782d74b9020365a6f8a8c2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/GroupTool/GTerrainGroupInspector.cs using Guid(f156939dd3782d74b9020365a6f8a8c2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '655e05af0409cd4b471aa727bb9bd463') in 0.0219064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Shaders/UniversalRP/UniversalRP_Forward.cginc
+  artifactKey: Guid(69cde3559dfec78478e4bf0c0314dfe8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Shaders/UniversalRP/UniversalRP_Forward.cginc using Guid(69cde3559dfec78478e4bf0c0314dfe8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '5685819830f884a70ba933d95cf42a47') in 0.0221382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Sample/Cubemaps/Poseidon_SkyCubemap_1.cubemap
+  artifactKey: Guid(37b71bd838ca86948bcf420ef4a2fca8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Sample/Cubemaps/Poseidon_SkyCubemap_1.cubemap using Guid(37b71bd838ca86948bcf420ef4a2fca8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '154ec9029709c7db5b876ef813dfedc0') in 0.4451952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Utilities/GObjectHelper.cs
+  artifactKey: Guid(4a6e0af9dd7f8404fabcf9e165316dc3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Utilities/GObjectHelper.cs using Guid(4a6e0af9dd7f8404fabcf9e165316dc3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '5c9dd040a88e63ff949b2cb54cc49b36') in 0.0131397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.126931 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/BlockyTree.fbx
+  artifactKey: Guid(53c7689dffb0f774fb2eb22889ae504d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/BlockyTree.fbx using Guid(53c7689dffb0f774fb2eb22889ae504d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'da40f40cadb57d97ce8a91e6e428b4a5') in 0.0804068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Shaders/BuiltinRP/Terrain/BuiltinRP_Lambert_4Splats4Normals.shader
+  artifactKey: Guid(1fd9809ddd14aef4db7c590b4d7c4776) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Shaders/BuiltinRP/Terrain/BuiltinRP_Lambert_4Splats4Normals.shader using Guid(1fd9809ddd14aef4db7c590b4d7c4776) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '4f0fd8d63e5e6cf4cbf3e805ac2d8899') in 0.0168286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/StampTool/GStampLayerMaskRenderer.cs
+  artifactKey: Guid(ca6a4de51cb9ceb4dae58882a8f8574d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/StampTool/GStampLayerMaskRenderer.cs using Guid(ca6a4de51cb9ceb4dae58882a8f8574d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '6b45ba80a4784f61b4c0bdbda100497c') in 0.012552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Textures/PolarisIcon.png
+  artifactKey: Guid(470cca2dec652ae47b48553cf4436ba8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Textures/PolarisIcon.png using Guid(470cca2dec652ae47b48553cf4436ba8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '4252ee94588526f48902f9de91b84f7b') in 0.0664045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/PaintTool/ObjectPainters/GObjectSpawner.cs
+  artifactKey: Guid(8952777ed5ccbef4e8e819b41bdda8f4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/PaintTool/ObjectPainters/GObjectSpawner.cs using Guid(8952777ed5ccbef4e8e819b41bdda8f4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '36eec8f2291dd4959efc8c43daf49562') in 0.0118297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/BillboardTool/GBillboardCreator.cs
+  artifactKey: Guid(db76d4feb5c2d6d4c852d0826f6a8f85) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/BillboardTool/GBillboardCreator.cs using Guid(db76d4feb5c2d6d4c852d0826f6a8f85) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '52b6004ed3a2c226f6fd0613131cf1be') in 0.0160108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Models/Grid4.fbx
+  artifactKey: Guid(2be8ef80a0f55b049b3fdb04a887bc88) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Models/Grid4.fbx using Guid(2be8ef80a0f55b049b3fdb04a887bc88) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '31ba5c7c1a91ae5a81d7a03c57fe6fc1') in 0.0505093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Scenes/Demo_04/GeneratedGeometry_816030578723965736.asset
+  artifactKey: Guid(245997b8c75ad374a83049e26143aaf2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Scenes/Demo_04/GeneratedGeometry_816030578723965736.asset using Guid(245997b8c75ad374a83049e26143aaf2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '45471fa5e5df30bc72e1f26076cb48ea') in 0.2015847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 124
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Shaders/BuiltinRP/Demo
+  artifactKey: Guid(91c3ccd1cf53b074bba7fad1b82160e5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Shaders/BuiltinRP/Demo using Guid(91c3ccd1cf53b074bba7fad1b82160e5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '84498cb47be104a8b2ee55704f99dbe1') in 0.0113081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Materials
+  artifactKey: Guid(991b29ae12e5ea64181dcd07931b3bb0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Materials using Guid(991b29ae12e5ea64181dcd07931b3bb0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7cbdf80137675149225f59dd4c82b847') in 0.010514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.213626 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Textures/GearIcon.psd
+  artifactKey: Guid(591d4c9fbe7b16849b8de6e3b3ecb268) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Textures/GearIcon.psd using Guid(591d4c9fbe7b16849b8de6e3b3ecb268) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'c602294858ca4c47d136c24cd4f4df8f') in 0.0249049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/grass.fbx
+  artifactKey: Guid(55ec050b31858f44d8708cc887605cb0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/grass.fbx using Guid(55ec050b31858f44d8708cc887605cb0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'c00f4ea5a8ab4411526754cf55b80489') in 0.0247628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Editor/Scripts/Effects/PWaterFXProfileInspector.cs
+  artifactKey: Guid(b29231a8f69bc3e46ba5e8c572478c00) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Editor/Scripts/Effects/PWaterFXProfileInspector.cs using Guid(b29231a8f69bc3e46ba5e8c572478c00) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '3742e82cefa5601f74de0fec27f2f9af') in 0.0136115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/TextureTool/Generators/GHeightMapFromMeshGeneratorParams.cs
+  artifactKey: Guid(01e25bc981b863e4f894478f9ea681a1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/TextureTool/Generators/GHeightMapFromMeshGeneratorParams.cs using Guid(01e25bc981b863e4f894478f9ea681a1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '54f54b5b08f6e0bf0529c66d21eb1c15') in 0.0155388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models
+  artifactKey: Guid(ff117d35eb911074d9e376b95410cae3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models using Guid(ff117d35eb911074d9e376b95410cae3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'a05a70468fcbb1fb62ab6fee3aa46790') in 0.0119045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/SplineTool/GSplineCreatorInspector.cs
+  artifactKey: Guid(5183558bccf9aa644b43209408435eb9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/SplineTool/GSplineCreatorInspector.cs using Guid(5183558bccf9aa644b43209408435eb9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7899e86d9018d44b0c28846233d8bf24') in 0.0122814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/PaintTool/SpawnFilters/GDistanceConstraintFilter.cs
+  artifactKey: Guid(ec6645d2bc213064e94be134d652b9c9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/PaintTool/SpawnFilters/GDistanceConstraintFilter.cs using Guid(ec6645d2bc213064e94be134d652b9c9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '95ead8ab1afa380035b5918846f4927b') in 0.0115314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Textures/WinterPineTree.psd
+  artifactKey: Guid(439f1cfd5ce3ddc409d76f4f45baba23) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Textures/WinterPineTree.psd using Guid(439f1cfd5ce3ddc409d76f4f45baba23) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'd323a0ace4b282528352464310a5b1dd') in 0.0277764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Textures/BlockyTree.psd
+  artifactKey: Guid(06c861ce5a38d2549851bbba4bea0808) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Textures/BlockyTree.psd using Guid(06c861ce5a38d2549851bbba4bea0808) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'cf86d44607114bc165bf9aa66cbfc2d1') in 0.0298088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/pyramid.fbx
+  artifactKey: Guid(1e7f8276caa13c54d9a520cc7234acea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/pyramid.fbx using Guid(1e7f8276caa13c54d9a520cc7234acea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '3f9febe456b8f57c0d9feae0bdec8d16') in 0.0352189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Sample/Scripts
+  artifactKey: Guid(223fc4eadf540914abe08d069d1a6406) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Sample/Scripts using Guid(223fc4eadf540914abe08d069d1a6406) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '02f1a47176abbc469c039b4d4389e2e4') in 0.0101167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Scripts/Core/PMat.cs
+  artifactKey: Guid(ab270e5a2a0b3994b844711d06c59eb6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Scripts/Core/PMat.cs using Guid(ab270e5a2a0b3994b844711d06c59eb6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'd2e056ac42e479072c714a7f2c430d61') in 0.0124266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/Extensions/MicroSplat Integration/GMicroSplatIntegrationSettings.cs
+  artifactKey: Guid(b05a21676f6765b46ab63bc360883773) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/Extensions/MicroSplat Integration/GMicroSplatIntegrationSettings.cs using Guid(b05a21676f6765b46ab63bc360883773) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'ad90710d9b079913218401da79a6218e') in 0.0125357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Materials/Terrain/Builtin_PBR_8Splats.mat
+  artifactKey: Guid(09444822d81fc16418d0e347310de385) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Materials/Terrain/Builtin_PBR_8Splats.mat using Guid(09444822d81fc16418d0e347310de385) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '80292e4ea2f980fbba0927ddb730c3e3') in 0.0154315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Sample/Prefabs/MovingLights.prefab
+  artifactKey: Guid(81f28137ab338dc4a984501df379bc1f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Sample/Prefabs/MovingLights.prefab using Guid(81f28137ab338dc4a984501df379bc1f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'bd4976c32a7e3ba74d8b7fa77f6e6fcf') in 0.0196996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.238579 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/TerrainData/GTreePrototypeGroup.cs
+  artifactKey: Guid(4e8fda743b539a043b220ae6e99779c2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/TerrainData/GTreePrototypeGroup.cs using Guid(4e8fda743b539a043b220ae6e99779c2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '389cf2b49e1256ac572e97ff4f66fb18') in 0.0128437 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/PaintTool/GeometryTexturePainters/GTexturePaintingMode.cs
+  artifactKey: Guid(4559f3cb800a56a4783b3b7bdb34d0c0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/PaintTool/GeometryTexturePainters/GTexturePaintingMode.cs using Guid(4559f3cb800a56a4783b3b7bdb34d0c0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7f13d573338db2be38ec9f17a6948eab') in 0.0120095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Editor/Scripts/Core/PEditorCommon.cs
+  artifactKey: Guid(4bc1ffda7fc15ff4daf998b3db6956dc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Editor/Scripts/Core/PEditorCommon.cs using Guid(4bc1ffda7fc15ff4daf998b3db6956dc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'e8c987c8d5c166922203b47a14e32974') in 0.0132753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/TextureTool/Filters/GWarpParams.cs
+  artifactKey: Guid(1c3f43dd3e7304a49b8bf7bf1fba09cc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/TextureTool/Filters/GWarpParams.cs using Guid(1c3f43dd3e7304a49b8bf7bf1fba09cc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '23f535d864452cb6b549df9354a9fecf') in 0.0119305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/SplineTool/GObjectRemover.cs
+  artifactKey: Guid(477f6433bcaf6d54287a4619712eb326) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/SplineTool/GObjectRemover.cs using Guid(477f6433bcaf6d54287a4619712eb326) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '8677a7be3e90b0bc5d3d42e791d65863') in 0.0246659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Editor/Scripts
+  artifactKey: Guid(d02815eee0ae46e41ad0d69e53162cd8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Editor/Scripts using Guid(d02815eee0ae46e41ad0d69e53162cd8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7e29893ab5a93651661befbec4769b2e') in 0.0106336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/WizardTool/GWizardEditorCommon.cs
+  artifactKey: Guid(eb8df5b24cb8da34cafbdf272c30a69a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/WizardTool/GWizardEditorCommon.cs using Guid(eb8df5b24cb8da34cafbdf272c30a69a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'ebe3b2f86752daf1fad562d0bfdf5227') in 0.0132755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Sample/Scenes/Demo_2.unity
+  artifactKey: Guid(27487f6aa3888674a8fcff39d24d9a9a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Sample/Scenes/Demo_2.unity using Guid(27487f6aa3888674a8fcff39d24d9a9a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'f8093d324ee52d6baff8a5e68e63a5da') in 0.0321384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Runtime/DefaultProfiles/StarryNight.asset
+  artifactKey: Guid(8585bdf0dc6491649be0609424d9661b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Runtime/DefaultProfiles/StarryNight.asset using Guid(8585bdf0dc6491649be0609424d9661b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'cb960d372842d26ffac2a84a67d97b08') in 0.0571386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Materials/Water.mat
+  artifactKey: Guid(76a744d72fa84474397198c81fa41777) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Materials/Water.mat using Guid(76a744d72fa84474397198c81fa41777) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '61b64cdf215e8c9e7c6c98daefef40eb') in 0.0142193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Models/Grid3.fbx
+  artifactKey: Guid(d3b8adb1a8ed2f9419de072e5beb84f9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Models/Grid3.fbx using Guid(d3b8adb1a8ed2f9419de072e5beb84f9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '70e5aba9c58087210ec9db15b4ba0654') in 0.0264445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Compression/GCompressor.cs
+  artifactKey: Guid(39f5f02eb246288469e307fac8181b50) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Compression/GCompressor.cs using Guid(39f5f02eb246288469e307fac8181b50) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '550c2393f7be1618a72fed4c2ef39c1d') in 0.0150167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Scripts
+  artifactKey: Guid(62df653156235fe498dc63733948b3ea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Scripts using Guid(62df653156235fe498dc63733948b3ea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '5b32fe006fc50cc927dcfe4c7fe4d56a') in 0.0107638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Scripts/Utilities/PIndex2D.cs
+  artifactKey: Guid(3ffd21657777e8545a7649cfe28f73b6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Runtime/Scripts/Utilities/PIndex2D.cs using Guid(3ffd21657777e8545a7649cfe28f73b6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '2966509201f8f7672e68e75eed0f845d') in 0.0128056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Editor/Scripts/Core/PPackageInitializer.cs
+  artifactKey: Guid(24fc572b506f66a4b93162a883aaaea1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Poseidon - Low Poly Water System/Editor/Scripts/Core/PPackageInitializer.cs using Guid(24fc572b506f66a4b93162a883aaaea1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '490a5eb519f82405561244487801ee2d') in 0.0154322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Compression/LzfLibrary/Link.txt
+  artifactKey: Guid(4f5317cfe73fc9b41b801f1798632044) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Compression/LzfLibrary/Link.txt using Guid(4f5317cfe73fc9b41b801f1798632044) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '087959051b820e34683cd64436759021') in 0.0153942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Editor
+  artifactKey: Guid(83b687eddf2507540b2ba1002e73c202) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Editor using Guid(83b687eddf2507540b2ba1002e73c202) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '2dcd6244e8a170bede01d6741393e45e') in 0.0100927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Textures/HeightSamplingIcon.psd
+  artifactKey: Guid(ebd8a1d9d73590c46b57b034f64e792f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Textures/HeightSamplingIcon.psd using Guid(ebd8a1d9d73590c46b57b034f64e792f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7c12adb38acb75381c0022b9a4c84a10') in 0.026046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Shaders/Internal/PaintTool/MaskPainter.shader
+  artifactKey: Guid(e0e8cfc8c3f9c9f44bbb06394d46e1c9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Shaders/Internal/PaintTool/MaskPainter.shader using Guid(e0e8cfc8c3f9c9f44bbb06394d46e1c9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '87ca059031ab1cd2144a41470f98daf2') in 0.0142178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/Extensions/BuiltinRP Support/GGriffinBrpResources.cs
+  artifactKey: Guid(9fb91ed894068014babda45e4bd0b920) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/Extensions/BuiltinRP Support/GGriffinBrpResources.cs using Guid(9fb91ed894068014babda45e4bd0b920) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '4a261da57a8ab2595a6341bd495c2bd4') in 0.0125226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Materials/Tool
+  artifactKey: Guid(4962219e84b3ffa4fbd3ce94a88d5559) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Materials/Tool using Guid(4962219e84b3ffa4fbd3ce94a88d5559) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '894e112c5c7efc1b03eafbdfae39228e') in 0.0102867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Total Game Assets/Models/model_polytope_windmill.fbx
+  artifactKey: Guid(6737b8e99723d044880ed5b87c7d71ae) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Total Game Assets/Models/model_polytope_windmill.fbx using Guid(6737b8e99723d044880ed5b87c7d71ae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'edbd66ab5b9ccd261e41944f7c9b4f90') in 0.042158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/GroupTool/GShadingOverride.cs
+  artifactKey: Guid(b9b722fe46ac65b4c9a7e95eef08626e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/GroupTool/GShadingOverride.cs using Guid(b9b722fe46ac65b4c9a7e95eef08626e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'abb214868fe3614db355dae6bc5f1c99') in 0.0134019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/SplineTool/GFoliageSpawnerInspector.cs
+  artifactKey: Guid(614c28b376274cc47ae3afad00ad3139) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/SplineTool/GFoliageSpawnerInspector.cs using Guid(614c28b376274cc47ae3afad00ad3139) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '210094f968d9186c59ab472f9c66d254') in 0.0128778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Utilities/GRenderPipelineType.cs
+  artifactKey: Guid(1e85497977b38544a8f43dc41ada02fc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Scripts/Utilities/GRenderPipelineType.cs using Guid(1e85497977b38544a8f43dc41ada02fc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '04f2eca297a7c479753e659167bdd2cf') in 0.0110376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/BackupTool/GBackupEditor.cs
+  artifactKey: Guid(c396a26156141b145b832e80c501382f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Scripts/BackupTool/GBackupEditor.cs using Guid(c396a26156141b145b832e80c501382f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '19256a0158e4f1daa8c005cf71a1dc6a') in 0.0125623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.908 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.428 seconds
+Domain Reload Profiling: 2332ms
+	BeginReloadAssembly (246ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (89ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (576ms)
+		LoadAssemblies (470ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (208ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (184ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1428ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1117ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (407ms)
+			ProcessInitializeOnLoadMethodAttributes (558ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6378 unused Assets / (2.5 MB). Loaded Objects now: 7273.
+Memory consumption went from 188.1 MB to 185.7 MB.
+Total: 10.311700 ms (FindLiveObjects: 0.936100 ms CreateObjectMapping: 0.474400 ms MarkObjects: 6.826500 ms  DeleteObjects: 2.073200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
