@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de989b5e2c400554b9f036d674a2c217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aiConfig: {fileID: 11400000, guid: 9d78781ab92f89843a83e7a4d67c8a6f, type: 2}
+  openAIController: {fileID: 3445495435836126234}
   dialogCamera: {fileID: 2083065265150195279}
   dialogCanvas: {fileID: 3154193556775723628}
   interactCanvas: {fileID: 5256545724043382720}
@@ -422,6 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0dc8d89bdac62f40aadd0bb0cfe04f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameField: {fileID: 4268516237684360849}
   textField: {fileID: 964698267183675456}
   inputField: {fileID: 1285242834334952105}
   okButton: {fileID: 8291671428117421289}
@@ -1072,6 +1075,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2322676047988428413, guid: 4543460c6e67c5d4ba663515bb552ce1, type: 3}
+      propertyPath: m_Name
+      value: name
+      objectReference: {fileID: 0}
     - target: {fileID: 3147855212539690024, guid: 4543460c6e67c5d4ba663515bb552ce1, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
       value: 0.7056604
@@ -1184,6 +1191,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 163582224039080790, guid: 4543460c6e67c5d4ba663515bb552ce1, type: 3}
   m_PrefabInstance: {fileID: 4213526672087750273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4268516237684360849 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 91660546537246736, guid: 4543460c6e67c5d4ba663515bb552ce1, type: 3}
+  m_PrefabInstance: {fileID: 4213526672087750273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8291671428117421289 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5289648274936777320, guid: 4543460c6e67c5d4ba663515bb552ce1, type: 3}

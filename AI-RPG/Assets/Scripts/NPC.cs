@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
+    [SerializeField] private NPCAIConfig aiConfig;
+    [SerializeField] private OpenAIController openAIController;
     [SerializeField] private CinemachineVirtualCameraBase dialogCamera;
     [SerializeField] private Canvas dialogCanvas;
     [SerializeField] private Canvas interactCanvas;
@@ -14,6 +16,16 @@ public class NPC : MonoBehaviour
         dialogCanvas.gameObject.SetActive(false);
         interactCanvas.gameObject.SetActive(false);
         dialogCamera.gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
+        Init();
+    }
+
+    public void Init()
+    {
+        openAIController.Init(aiConfig);
     }
 
     public void Interact(Player player)
