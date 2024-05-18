@@ -6,30 +6,53 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCameraBase _thirdPersonCamera;
-    [SerializeField] private ThirdPersonController _thirdPersonController;
-    private bool _canInteract;
+    [SerializeField] private CinemachineVirtualCameraBase thirdPersonCamera;
+    [SerializeField] private ThirdPersonController thirdPersonController;
+    [SerializeField] private StarterAssetsInputs starterAssetsInputs;
+    private NPC _interactableNPC;
+    private bool _isInteracting;
+
+    private void OnValidate()
+    {
+        starterAssetsInputs ??= GetComponent<StarterAssetsInputs>();
+        thirdPersonController ??= GetComponent<ThirdPersonController>();
+    }
 
     public void OnInteract(InputAction.CallbackContext callbackContext)
     {
-        if (_canInteract)
+        if (_interactableNPC != null)
         {
-            _thirdPersonCamera.Priority = 0;
             gameObject.SetActive(false);
+            Cursor.visible = true;
+            starterAssetsInputs.cursorLocked = false;
+            Cursor.lockState = CursorLockMode.None;
+            _interactableNPC.Interact(this);
+            _isInteracting = true;
         }
+    }
+
+    public void CancelInteract()
+    {
+        if(!_isInteracting) return;
+        gameObject.SetActive(true);
+        Cursor.visible = false;
+        starterAssetsInputs.cursorLocked = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Interact"))
+        if (other.GetComponentInParent<NPC>() != null)
         {
-            _canInteract = true;
+            _interactableNPC = other.GetComponentInParent<NPC>();
+            _interactableNPC.ToggleInteractUI(true);
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Interact"))
+        if (other.GetComponentInParent<NPC>() != null)
         {
-            _canInteract = false;
+            _interactableNPC.ToggleInteractUI(false);
+            _interactableNPC = null;
         }
     }
 }
