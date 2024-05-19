@@ -1,8 +1,8 @@
 using System;
 using Unity.Cinemachine;
 using UnityEngine;
-
-public class NPC : MonoBehaviour
+using static Interfaces;
+public class NPC : MonoBehaviour , Interactable
 {
     [SerializeField] private NPCAIConfig aiConfig;
     [SerializeField] private OpenAIController openAIController;
@@ -28,7 +28,9 @@ public class NPC : MonoBehaviour
         openAIController.Init(aiConfig);
     }
 
-    public void Interact(Player player)
+	#region Interactable
+
+	public void Interact(Player player)
     {
         _player = player;
         dialogCanvas.gameObject.SetActive(true);
@@ -47,4 +49,6 @@ public class NPC : MonoBehaviour
     {
         interactCanvas.gameObject.SetActive(state);
     }
+
+	#endregion
 }

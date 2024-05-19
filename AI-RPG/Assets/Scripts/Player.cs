@@ -3,13 +3,14 @@ using StarterAssets;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Interfaces;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCameraBase thirdPersonCamera;
     [SerializeField] private ThirdPersonController thirdPersonController;
     [SerializeField] private StarterAssetsInputs starterAssetsInputs;
-    private NPC _interactableNPC;
+    private Interactable interactable;
     private bool _isInteracting;
 
     private void OnValidate()
@@ -20,39 +21,47 @@ public class Player : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext callbackContext)
     {
-        if (_interactableNPC != null)
+        if (interactable != null)
         {
-            gameObject.SetActive(false);
-            Cursor.visible = true;
-            starterAssetsInputs.cursorLocked = false;
-            Cursor.lockState = CursorLockMode.None;
-            _interactableNPC.Interact(this);
-            _isInteracting = true;
+            if (interactable is NPC) {
+                gameObject.SetActive (false);
+                Cursor.visible = true;
+                starterAssetsInputs.cursorLocked = false;
+                Cursor.lockState = CursorLockMode.None;
+            }
+                _isInteracting = true;
+                interactable.Interact (this);
         }
     }
 
     public void CancelInteract()
     {
         if(!_isInteracting) return;
-        gameObject.SetActive(true);
-        Cursor.visible = false;
-        starterAssetsInputs.cursorLocked = true;
-        Cursor.lockState = CursorLockMode.Locked;
+
+        if (interactable is NPC) {
+            gameObject.SetActive (true);
+            Cursor.visible = false;
+            starterAssetsInputs.cursorLocked = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            _isInteracting = false;
+
+		}
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponentInParent<NPC>() != null)
+        if (other.GetComponentInParent<Interactable>() != null)
         {
-            _interactableNPC = other.GetComponentInParent<NPC>();
-            _interactableNPC.ToggleInteractUI(true);
+			interactable = other.GetComponentInParent<Interactable> ();
+			interactable.ToggleInteractUI(true);
         }
+
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponentInParent<NPC>() != null)
+        if (other.GetComponentInParent<Interactable> () != null)
         {
-            _interactableNPC.ToggleInteractUI(false);
-            _interactableNPC = null;
+			interactable.ToggleInteractUI(false);
+			interactable = null;
         }
     }
 }

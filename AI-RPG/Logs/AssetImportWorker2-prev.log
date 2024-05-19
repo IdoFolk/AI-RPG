@@ -1,0 +1,1010 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '6000.0.2f1 (c36be92430b9) revision 12807145'; Using compiler version '193933522'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 65384 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/UnityProjects/AI-RPG/AI-RPG
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60690
+-job-worker-count
+9
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: D:/UnityProjects/AI-RPG/AI-RPG
+D:/UnityProjects/AI-RPG/AI-RPG
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1604]  Target information:
+
+Player connection [1604]  * "[IP] 192.168.1.116 [Port] 0 [Flags] 2 [Guid] 621905136 [EditorId] 621905136 [Version] 1048832 [Id] WindowsEditor(7,RonsPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [1604] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1604] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+Library Redirect Path: Library/
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+Refreshing native plugins compatible for Editor in 2.96 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.2f1 (c36be92430b9)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/AI-RPG/AI-RPG/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12086 MB
+    Driver:   31.0.15.5222
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002216 seconds.
+- Loaded All Assemblies, in  0.304 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.337 seconds
+Domain Reload Profiling: 640ms
+	BeginReloadAssembly (101ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (99ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (122ms)
+				TypeCache.ScanAssembly (109ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (338ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (288ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Symbol file data-000001E3FADFAC20 doesn't match image D:\UnityProjects\AI-RPG\AI-RPG\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
+scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
+scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
+Unloading broken assembly Assets/Packages/Microsoft.Extensions.Options.8.0.0/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Assets/Packages/Microsoft.Extensions.Logging.Abstractions.8.0.0/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll, this assembly can cause crashes in the runtime
+- Loaded All Assemblies, in  0.959 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Refreshing native plugins compatible for Editor in 2.04 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 3.16 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.DiagDescriptors:<CantUseWithGenericTypes>k__BackingField' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser:_compilation' (2) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolHolder:<OptionsValidatorSymbol>k__BackingField' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.OptionsValidatorGenerator+<>c:<>9__0_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c:<>9__9_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass16_0:modelType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass19_0:<>9__1' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass1_0:modifierToSearch' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass5_0:returnType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolLoader+<>c__DisplayClass16_0:compilation' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
+  at Pinwheel.Griffin.GCommon.GetAllLoadedTypes () [0x0001e] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\Core\GCommon.cs:702 
+  at Pinwheel.Griffin.PaintTool.GSpawnFilterInitializer.InitFilters () [0x00000] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\PaintTool\SpawnFilters\GSpawnFilterInitializer.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <26627f99a7af447db68cd5961117dc4a>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.329 seconds
+Domain Reload Profiling: 2286ms
+	BeginReloadAssembly (300ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (573ms)
+		LoadAssemblies (396ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (260ms)
+			TypeCache.Refresh (189ms)
+				TypeCache.ScanAssembly (172ms)
+			BuildScriptInfoCaches (57ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1330ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1120ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (605ms)
+			ProcessInitializeOnLoadMethodAttributes (452ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 3.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 342 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6735 unused Assets / (5.1 MB). Loaded Objects now: 7603.
+Memory consumption went from 256.6 MB to 251.5 MB.
+Total: 31.281400 ms (FindLiveObjects: 1.120700 ms CreateObjectMapping: 0.858600 ms MarkObjects: 25.226100 ms  DeleteObjects: 4.074400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9373.343959 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Materials/Bakery matket.mat
+  artifactKey: Guid(8444303dee6f21e4c943696eae671249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Materials/Bakery matket.mat using Guid(8444303dee6f21e4c943696eae671249) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a54466401c1002f29c6a6584f52a0dac') in 0.4998644 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Materials/Meat market.mat
+  artifactKey: Guid(ee6311e667feb2848a84578e9c3bf6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Materials/Meat market.mat using Guid(ee6311e667feb2848a84578e9c3bf6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '24b36a8b9873a183f9f462a86b16cea3') in 0.0409277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Materials/Weapon market.mat
+  artifactKey: Guid(12f7312dd149c3b4a92b4216a8ae4800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Materials/Weapon market.mat using Guid(12f7312dd149c3b4a92b4216a8ae4800) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0091cd41dadc25cbb6317f69aa86dfa4') in 0.0402532 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Materials/Laterns.mat
+  artifactKey: Guid(8e153a51647cf7f4cb57852c1a31d47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Materials/Laterns.mat using Guid(8e153a51647cf7f4cb57852c1a31d47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'dce806ecf09a7067e3a2d7352b1c0a54') in 3.0775951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/AI To Export/Low-Poly Medieval Market.prefab
+  artifactKey: Guid(8ccb1f20022246e4daa2923fdcf6a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/AI To Export/Low-Poly Medieval Market.prefab using Guid(8ccb1f20022246e4daa2923fdcf6a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '37be137fbefa34319c2ca4bd1bd289a4') in 4.0390505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35277
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.20 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6717 unused Assets / (5.8 MB). Loaded Objects now: 7790.
+Memory consumption went from 281.6 MB to 275.8 MB.
+Total: 19.185500 ms (FindLiveObjects: 0.772700 ms CreateObjectMapping: 0.688000 ms MarkObjects: 15.162500 ms  DeleteObjects: 2.560500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 87.203948 seconds.
+  path: Assets/Assets/AI To Export/Low-Poly Medieval Market.prefab
+  artifactKey: Guid(8ccb1f20022246e4daa2923fdcf6a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/AI To Export/Low-Poly Medieval Market.prefab using Guid(8ccb1f20022246e4daa2923fdcf6a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'f8d5666d85846ac7ad3c37377aadd6af') in 0.6193278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35277
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.950323 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Scenes/Demo_00/Generated_TerrainData_e3ea99f6-86fa-4e43-a543-16d7614691c1.asset
+  artifactKey: Guid(8b0ee8ba96b27434abe0ecc8b4c5c0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Scenes/Demo_00/Generated_TerrainData_e3ea99f6-86fa-4e43-a543-16d7614691c1.asset using Guid(8b0ee8ba96b27434abe0ecc8b4c5c0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '880ed030cba5e6aa20979335dcba2252') in 0.3483858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 77
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Scenes/Demo_04/GeneratedGeometry_816030578723965736.asset
+  artifactKey: Guid(245997b8c75ad374a83049e26143aaf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Scenes/Demo_04/GeneratedGeometry_816030578723965736.asset using Guid(245997b8c75ad374a83049e26143aaf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'ebf6cdfe8c0db93a739592e51a3567f4') in 0.1318352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 125
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.178231 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Models/WireframeMeshes.asset
+  artifactKey: Guid(8d1a6310726c8af46a654a63d731e1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Models/WireframeMeshes.asset using Guid(8d1a6310726c8af46a654a63d731e1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'ed7e1b56e6c3e749971d79c0d02743b8') in 0.0692722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/wooden_box_destroyed.fbx
+  artifactKey: Guid(6f113b7979482754a96e262399ec698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/wooden_box_destroyed.fbx using Guid(6f113b7979482754a96e262399ec698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '6dbc89963edbbb5ecfd871aaf63f2ca1') in 0.0217032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/wooden_box.fbx
+  artifactKey: Guid(b34f7c7f01bf0134fa973b0e0e80918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/wooden_box.fbx using Guid(b34f7c7f01bf0134fa973b0e0e80918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a9820ff6a0ae4a37a1e0c7096c87256f') in 0.0206901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.400394 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Door_04.fbx
+  artifactKey: Guid(29f8f5169d78a5a40af584acd1043dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Door_04.fbx using Guid(29f8f5169d78a5a40af584acd1043dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '849cb6f280b04537cd5451b36519163d') in 0.0578481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Wardrobe_02.fbx
+  artifactKey: Guid(1a9e742f2199a8a4f88e8c75f2545389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Wardrobe_02.fbx using Guid(1a9e742f2199a8a4f88e8c75f2545389) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'bea0923ab3d9ff81a8147b7cdeca1191') in 0.0848246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_04.fbx
+  artifactKey: Guid(1610dfa2c7e742843b33a547703b81b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_04.fbx using Guid(1610dfa2c7e742843b33a547703b81b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '16a2672f6f4f7a521561daede1de4a67') in 0.0639967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cage_Cart_01.fbx
+  artifactKey: Guid(7c163afa6e771d840b5a094b9bc120d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cage_Cart_01.fbx using Guid(7c163afa6e771d840b5a094b9bc120d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'd676c2fe7d88866c612b15517b578742') in 0.0310762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_Alchemy_01.fbx
+  artifactKey: Guid(cecda37f77c79ed408110df25016cbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_Alchemy_01.fbx using Guid(cecda37f77c79ed408110df25016cbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '83a14663f593cef3e9454c75672b4a33') in 0.0813312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_Stackable_01.fbx
+  artifactKey: Guid(8ab99fc7e29499347a3b2ed8fb3bfce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_Stackable_01.fbx using Guid(8ab99fc7e29499347a3b2ed8fb3bfce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0982a42ce51e1e41fc2a41c35f7faf82') in 0.0421613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_02.fbx
+  artifactKey: Guid(978f72b62824cd04fb3649aecd29bca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_02.fbx using Guid(978f72b62824cd04fb3649aecd29bca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'fd06525e0fc407cc4feef15ee43ae59e') in 0.0425455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Door_Boarding_01_Convex.asset
+  artifactKey: Guid(00983653db628ca458ecac761e9a4518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Door_Boarding_01_Convex.asset using Guid(00983653db628ca458ecac761e9a4518) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '6ed1570a42bc4ea2e11eff2db76d47dd') in 0.0175509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Door_Boarding_01.fbx
+  artifactKey: Guid(9a3f5e64b2dcd284682caa3ea3da8c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Prop_Door_Boarding_01.fbx using Guid(9a3f5e64b2dcd284682caa3ea3da8c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '9f4fe587d0bfb25b5a1851584f64a420') in 0.0197382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.898283 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_02_Convex.asset
+  artifactKey: Guid(712889ddeb40dc74792604e916a1b969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_02_Convex.asset using Guid(712889ddeb40dc74792604e916a1b969) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a32b52b7d306e32a6a03e1049e92b510') in 0.0167269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_03_Convex 1.asset
+  artifactKey: Guid(b13d5d84dfee1c748a45c228dbb5d93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_03_Convex 1.asset using Guid(b13d5d84dfee1c748a45c228dbb5d93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '85886efdb4ce1cb6afbe0b0d5a524d22') in 0.0142985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_01_Convex.asset
+  artifactKey: Guid(daf5ea3b14dfdab45ac671a98cce0584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_01_Convex.asset using Guid(daf5ea3b14dfdab45ac671a98cce0584) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '48335ecd473b3b5b54038c3975f74c65') in 0.0175275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_02_Convex 1.asset
+  artifactKey: Guid(f642b656d2fd51f4d88f1c95769316d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_02_Convex 1.asset using Guid(f642b656d2fd51f4d88f1c95769316d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'b527286e6a3113c43b756c9c2a7bac47') in 0.0137349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Door_01.fbx
+  artifactKey: Guid(dbeb2620ab330a349acfac3a6a850916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Door_01.fbx using Guid(dbeb2620ab330a349acfac3a6a850916) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '6a6bbb61f126a6e8a172d20ce0f80fa8') in 0.0315293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_01_Convex 1.asset
+  artifactKey: Guid(bf85d89b166fb7844b3c5d878302244a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_01_Convex 1.asset using Guid(bf85d89b166fb7844b3c5d878302244a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a67dfa8a97a332b4c5d8eaa68d37c038') in 0.0142636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.308663 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Angle_Door_01_Convex 3.asset
+  artifactKey: Guid(5bd6eacc724e7bd429dd6e5201b37d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Angle_Door_01_Convex 3.asset using Guid(5bd6eacc724e7bd429dd6e5201b37d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '2a4d03ece053f410d8b4259da2f2131f') in 0.0166798 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Door_01_Convex.asset
+  artifactKey: Guid(709041a57312d4142b212fe80eac68fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Door_01_Convex.asset using Guid(709041a57312d4142b212fe80eac68fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '1185bade6f06f320a9d64b1970b89536') in 0.0141017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Wall_Gate_L_01.fbx
+  artifactKey: Guid(f8938770e15fc924c85e53f8ab1aeacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Wall_Gate_L_01.fbx using Guid(f8938770e15fc924c85e53f8ab1aeacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'cd08cbf2e1925b79428388776f9b4cf2') in 0.0496629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Wall_Door_Big_01.fbx
+  artifactKey: Guid(f6b257ea55e59704eba5b3ea09fe1cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Wall_Door_Big_01.fbx using Guid(f6b257ea55e59704eba5b3ea09fe1cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '5f113da3d2414a710a6f3f912cdabd19') in 0.0537025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Angle_Door_01_Convex.asset
+  artifactKey: Guid(67a12955dc44d1341a5402271afda1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Angle_Door_01_Convex.asset using Guid(67a12955dc44d1341a5402271afda1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'b40f70eba0ce786c32fcea8e74207cdc') in 0.0157499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.639549 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 5.asset
+  artifactKey: Guid(2934a9dff04865f4eaa89b9eeb1a4e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 5.asset using Guid(2934a9dff04865f4eaa89b9eeb1a4e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0d5b6ef49a10666f12f828e054fe449c') in 0.0344573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034200 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 3.asset
+  artifactKey: Guid(68b7b1a6fcea0cd42a4c57fd24dd0f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 3.asset using Guid(68b7b1a6fcea0cd42a4c57fd24dd0f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '61a6e9fde913be38d5ab10b031464a83') in 0.0296779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.854943 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Tower_Angle_02.fbx
+  artifactKey: Guid(e228fa32143655b4e876f6ab60a04ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Tower_Angle_02.fbx using Guid(e228fa32143655b4e876f6ab60a04ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'c440fd8fa6a25e901b2d99f49c2d534b') in 0.0211519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Angle_HeightCap_01_Convex 2.asset
+  artifactKey: Guid(b37534da296e8b34e9a0bd385bb21f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Tower_Angle_HeightCap_01_Convex 2.asset using Guid(b37534da296e8b34e9a0bd385bb21f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '4051f98cb20d25db721000d56da5b8da') in 0.0293722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Tower_Angle_Window_01.fbx
+  artifactKey: Guid(45667057bb5f1d34c938151c126c7b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Tower_Angle_Window_01.fbx using Guid(45667057bb5f1d34c938151c126c7b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'b294aa2adccfeff1e0802d6d1bba0bb1') in 0.0249096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.656879 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_01_Convex.asset
+  artifactKey: Guid(3f543b8b069bdd940bf5b65278b279a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_01_Convex.asset using Guid(3f543b8b069bdd940bf5b65278b279a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'e922bd3da338eae0ec4f479187a01207') in 0.0156349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Peak_02_Convex.asset
+  artifactKey: Guid(ba713b12d9e9ad9459f70bc6d21909e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Peak_02_Convex.asset using Guid(ba713b12d9e9ad9459f70bc6d21909e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '79d53cc60195b07f62661728cbc4ed6a') in 0.0138693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_Height_02_Convex.asset
+  artifactKey: Guid(518c9fffa9ec0e540aa608b5cfaf2d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_Height_02_Convex.asset using Guid(518c9fffa9ec0e540aa608b5cfaf2d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'ea3e740d36c0fc3dd4c9133487bc835b') in 0.0181947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Peak_03_Convex.asset
+  artifactKey: Guid(6d5395449f732ac4fbefc133d24d4787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Peak_03_Convex.asset using Guid(6d5395449f732ac4fbefc133d24d4787) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'da3f8f8beb473ef3ad12ef41985006a7') in 0.0137811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_HeightCap_02.fbx
+  artifactKey: Guid(a15e671c4d17f0f488cd0db70f3a6067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_HeightCap_02.fbx using Guid(a15e671c4d17f0f488cd0db70f3a6067) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '037c2dee929ebefddf2b6cec4ec938dc') in 0.019041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_Window_02_Convex.asset
+  artifactKey: Guid(679966635913ce5479ea3e4db34d38b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_Window_02_Convex.asset using Guid(679966635913ce5479ea3e4db34d38b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'ac6028dc59c85332d1a896e9307542e7') in 0.0141575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_Height_Window_01_Convex.asset
+  artifactKey: Guid(a4f6629a29dcfec4b93b6563177c18e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Half_Height_Window_01_Convex.asset using Guid(a4f6629a29dcfec4b93b6563177c18e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0d9329e3131aa56d29bcdc4469c2bfe9') in 0.0148523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.591180 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Door_Single_01_Convex.asset
+  artifactKey: Guid(16741d1f5e0821d42a9eb81a4a254c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Door_Single_01_Convex.asset using Guid(16741d1f5e0821d42a9eb81a4a254c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '976f2409ad5bc4987b422372abb75dc0') in 0.0156202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Corner_S_Door_01_Convex 1.asset
+  artifactKey: Guid(bf2fd681b48bafb43b52c9393f93aa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Corner_S_Door_01_Convex 1.asset using Guid(bf2fd681b48bafb43b52c9393f93aa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '45b4640fcb91013e1966e0056a352943') in 0.0205742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.736173 seconds.
+  path: Assets/Assets/Vendors_and_Customers/Models/Dishes/StaticMesh_BigPot_Full.fbx
+  artifactKey: Guid(e4bbb6cf9c58f634f8bdf202a35cfc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Vendors_and_Customers/Models/Dishes/StaticMesh_BigPot_Full.fbx using Guid(e4bbb6cf9c58f634f8bdf202a35cfc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'fcdaf1199a5e51e691156ab7257ca6c4') in 0.0353092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Total Game Assets/Models/model_polytope_wind_turbine.fbx
+  artifactKey: Guid(613988533aa5fcf4d8db50600256eb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Total Game Assets/Models/model_polytope_wind_turbine.fbx using Guid(613988533aa5fcf4d8db50600256eb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '7a17106031a5fbe2e4c03020dc8459f5') in 0.0329138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Total Game Assets/Models/model_polytope_campervan.fbx
+  artifactKey: Guid(7932616af76443c47ba5588827f5c17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Total Game Assets/Models/model_polytope_campervan.fbx using Guid(7932616af76443c47ba5588827f5c17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '1668906b651b1e3121a32cf15125ed4d') in 0.0559048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.619669 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/apple_green.fbx
+  artifactKey: Guid(71c5647d13e97ec4c8f30cc729c99940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/apple_green.fbx using Guid(71c5647d13e97ec4c8f30cc729c99940) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0202684cb58d36a91892847782aba7ce') in 0.0302742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/FBX Weapon market/axe.fbx
+  artifactKey: Guid(8ab5ed643d71db440a2338820ca4fa91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/FBX Weapon market/axe.fbx using Guid(8ab5ed643d71db440a2338820ca4fa91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'c28c4e9a5c9750031632bc24a91fc307') in 0.0201954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/average_meat.fbx
+  artifactKey: Guid(f1e45e089509d8440a06755a320a2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/average_meat.fbx using Guid(f1e45e089509d8440a06755a320a2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '68a5a31f69af84f579b06089cd23f82a') in 0.0192066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/FBX Weapon market/armor_shoulder_pad_left.fbx
+  artifactKey: Guid(44806fb2e265b4b41a2c0f0ec40d228b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/FBX Weapon market/armor_shoulder_pad_left.fbx using Guid(44806fb2e265b4b41a2c0f0ec40d228b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '3952cb9db9bbb940841738f6cb6dda41') in 0.0253931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/autumn-trees.fbx
+  artifactKey: Guid(de58b283718058b4c85bb991e8d5a09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/autumn-trees.fbx using Guid(de58b283718058b4c85bb991e8d5a09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a767dae8de0bc3ee467a2f487e7746df') in 0.0511009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.850225 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Supports_03_Convex.asset
+  artifactKey: Guid(4756c7f8a49bf28418a953605a793ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Supports_03_Convex.asset using Guid(4756c7f8a49bf28418a953605a793ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a8d22a5ae1f08c546f11f5777aceac25') in 0.0222628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Meat_Pork_Trotter_01_Convex.asset
+  artifactKey: Guid(6e84453542e84294c88e3e75c073a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Meat_Pork_Trotter_01_Convex.asset using Guid(6e84453542e84294c88e3e75c073a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0431442fc4e4d1e48f5146b4749dcd92') in 0.0151564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/PolygonFantasyKingdom/Models/SM_Item_Meat_Pork_Trotter_01.fbx
+  artifactKey: Guid(b79ef75f80c4cc04c845276cfba65196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/PolygonFantasyKingdom/Models/SM_Item_Meat_Pork_Trotter_01.fbx using Guid(b79ef75f80c4cc04c845276cfba65196) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '5615d9b6428196e042104832babc2111') in 0.0175964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.053089 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/FBX Weapon market/crossbow.fbx
+  artifactKey: Guid(519d2ebaf824d1d4da5ddaac0ae66a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/FBX Weapon market/crossbow.fbx using Guid(519d2ebaf824d1d4da5ddaac0ae66a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '1c870b580292c845d5531aa87e1f41bc') in 0.0476538 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/grass.fbx
+  artifactKey: Guid(55ec050b31858f44d8708cc887605cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Models/grass.fbx using Guid(55ec050b31858f44d8708cc887605cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'e7e4614680ec430c0d2063a0e000d4f0') in 0.0229941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Low-Poly Medieval Market/Models/fish_twisted_01.fbx
+  artifactKey: Guid(f18dbc5e2d5cf7445a5eb39f6a7d3458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low-Poly Medieval Market/Models/fish_twisted_01.fbx using Guid(f18dbc5e2d5cf7445a5eb39f6a7d3458) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '86867f23351e8eaaef1f6daabf5f1244') in 0.0668679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
