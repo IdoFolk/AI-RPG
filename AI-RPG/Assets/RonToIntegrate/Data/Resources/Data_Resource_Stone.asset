@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539b3b5e9ff009944bc1f098695bac31, type: 3}
+  m_Name: Data_Resource_Stone
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Name: Resource_Stone
+  resourceName: Stone
+  description: Im a description
+  uiSprite: {fileID: 21300000, guid: e7035e374ea03dc4fbac46211470b363, type: 3}
+  resourceGraphics: {fileID: 986896912676667597, guid: b5ec1f1268638f84b96bb9514a5f4ae7,
+    type: 3}
+  physicalProperties:
+    heatPropery: 0
+    electricPropery: 0
+    burnProperty: 0
+    strengthProperty: 1
