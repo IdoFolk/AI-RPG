@@ -40,13 +40,13 @@ public class GameManager : MonoBehaviour
     }
 
     void EnableRtsView () {
-		RTSControllManager.instance.ToggleController(true);
+		//RTSControllManager.instance.ToggleController(true);
 		PlayerController.instance.ToggleController(false);
         isInRTSView = true;
 	}
 
 	void EnablePersonView () {
-		RTSControllManager.instance.ToggleController (false);
+	//	RTSControllManager.instance.ToggleController (false);
 		PlayerController.instance.ToggleController (true);
 		isInRTSView = false;
 	}

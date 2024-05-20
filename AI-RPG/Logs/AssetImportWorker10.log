@@ -222,3 +222,57 @@ Unloading 6806 unused Assets / (5.6 MB). Loaded Objects now: 7682.
 Memory consumption went from 255.2 MB to 249.6 MB.
 Total: 28.771800 ms (FindLiveObjects: 1.156900 ms CreateObjectMapping: 1.153700 ms MarkObjects: 22.397100 ms  DeleteObjects: 4.062400 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 13227.262895 seconds.
+  path: Assets/RonToIntegrate/Materials/Glass.mat
+  artifactKey: Guid(c001b4e422853224d8f4fb77646492c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RonToIntegrate/Materials/Glass.mat using Guid(c001b4e422853224d8f4fb77646492c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '4a32d250f404c3fb9b4db68fbbb832d0') in 0.385341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/RonToIntegrate/Materials/New Material 1.mat
+  artifactKey: Guid(6845ddb302ff5294ba6b50d3e54d6208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RonToIntegrate/Materials/New Material 1.mat using Guid(6845ddb302ff5294ba6b50d3e54d6208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '1d39c38216c087c1eaf653ba82f7f9ab') in 0.0071888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RonToIntegrate/Materials/MineLaserMat.mat
+  artifactKey: Guid(71cc4d878f893c9469992028ba5ac566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RonToIntegrate/Materials/MineLaserMat.mat using Guid(71cc4d878f893c9469992028ba5ac566) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'b88a5138e8ae1e28b4e59659ddc21ecb') in 0.0073854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.865547 seconds.
+  path: Assets/RonToIntegrate/Materials/Characters/ClickedMat.mat
+  artifactKey: Guid(14e6122b9994b2547a5257c337dd77af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RonToIntegrate/Materials/Characters/ClickedMat.mat using Guid(14e6122b9994b2547a5257c337dd77af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '51915b66142b720bc89cfec23f44fb83') in 0.0083105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/RonToIntegrate/Materials/Characters/EnemyMat.mat
+  artifactKey: Guid(9e1cf6b6b3af5064387c692408790657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RonToIntegrate/Materials/Characters/EnemyMat.mat using Guid(9e1cf6b6b3af5064387c692408790657) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '25be033d1a65aa8563280d2755f20246') in 0.0064087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

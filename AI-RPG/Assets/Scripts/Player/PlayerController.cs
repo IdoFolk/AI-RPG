@@ -26,7 +26,7 @@ public class PlayerController : SerializedMonoBehaviour
 	Animator animator;
 
 	[SerializeField]
-	CinemachineVirtualCamera virtualCamera;
+	CinemachineCamera virtualCamera;
 
 	[SerializeField]
 	GameObject camLookAtObject;
@@ -232,7 +232,7 @@ public class PlayerController : SerializedMonoBehaviour
 
 		movementVector = movementVector * modifiedMovementSpeed;
 
-		virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(60,65,sprintModifier);
+		virtualCamera.Lens.FieldOfView = Mathf.Lerp(60,65,sprintModifier);
 		
 		if(sprintModifier > 0.5f) {
 			if (!psFlag) {
