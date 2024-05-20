@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741e041b5020166449500ff8ce4c0f16, type: 3}
+  m_Name: BlacksmithAI
+  m_EditorClassIdentifier: 
+  _name: Yaakov
+  role: Blacksmith
+  startingDialog: Welcome to my shop! how can i help you?
+  npcRoleDiscription: you are a blacksmith selling various armors and weapons for
+    adventurers.
+  location: {fileID: 11400000, guid: bb080a175a994014c8171f89122e8c5a, type: 2}
+  worldSetting: {fileID: 11400000, guid: 4554a3966652b36409bd2da2c24e4ce0, type: 2}
+  creativity: 0.707

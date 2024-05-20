@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb4192e704ba16468399fbc8cfe8945, type: 3}
+  m_Name: Market
+  m_EditorClassIdentifier: 
+  _name: The Market
+  locationDiscription: Located in the middle of the city the Market is a place where
+    the people of rivercrest buy everything. there are a variety of vendors selling
+    different things in market stalls and shops. The currency in the market is called
+    koskas coins.
+  AssignedNPCs:
+  - {fileID: 11400000, guid: 9d78781ab92f89843a83e7a4d67c8a6f, type: 2}

@@ -1,9 +1,11 @@
 using System;
 using Unity.Cinemachine;
 using UnityEngine;
-
-public class NPC : MonoBehaviour
+using static Interfaces;
+public class NPC : MonoBehaviour , Interactable
 {
+    [SerializeField] private NPCAIConfig aiConfig;
+    [SerializeField] private OpenAIController openAIController;
     [SerializeField] private CinemachineVirtualCameraBase dialogCamera;
     [SerializeField] private Canvas dialogCanvas;
     [SerializeField] private Canvas interactCanvas;
@@ -16,7 +18,19 @@ public class NPC : MonoBehaviour
         dialogCamera.gameObject.SetActive(false);
     }
 
-    public void Interact(Player player)
+    private void Start()
+    {
+        Init();
+    }
+
+    public void Init()
+    {
+        openAIController.Init(aiConfig);
+    }
+
+	#region Interactable
+
+	public void Interact(Player player)
     {
         _player = player;
         dialogCanvas.gameObject.SetActive(true);
@@ -35,4 +49,6 @@ public class NPC : MonoBehaviour
     {
         interactCanvas.gameObject.SetActive(state);
     }
+
+	#endregion
 }
