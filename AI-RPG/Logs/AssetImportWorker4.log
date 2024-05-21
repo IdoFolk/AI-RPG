@@ -15,7 +15,7 @@ D:/UnityProjects/AI-RPG/AI-RPG
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-51099
+62371
 -job-worker-count
 9
 -background-job-worker-count
@@ -59,16 +59,16 @@ D:/UnityProjects/AI-RPG/AI-RPG
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [39324]  Target information:
+Player connection [26616]  Target information:
 
-Player connection [39324]  * "[IP] 192.168.1.116 [Port] 0 [Flags] 2 [Guid] 3849129615 [EditorId] 3849129615 [Version] 1048832 [Id] WindowsEditor(7,RonsPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [26616]  * "[IP] 192.168.1.116 [Port] 0 [Flags] 2 [Guid] 2848136769 [EditorId] 2848136769 [Version] 1048832 [Id] WindowsEditor(7,RonsPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [39324] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [39324] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26616] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26616] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Library Redirect Path: Library/
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-Refreshing native plugins compatible for Editor in 3.67 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 2.94 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.2f1 (c36be92430b9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/Resources/UnitySubsystems
@@ -84,43 +84,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001887 seconds.
-- Loaded All Assemblies, in  0.372 seconds
+Registered in 0.002031 seconds.
+- Loaded All Assemblies, in  0.423 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.421 seconds
-Domain Reload Profiling: 791ms
-	BeginReloadAssembly (123ms)
+- Finished resetting the current domain, in  0.352 seconds
+Domain Reload Profiling: 774ms
+	BeginReloadAssembly (162ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (155ms)
-		LoadAssemblies (119ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (159ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (151ms)
-			TypeCache.Refresh (150ms)
-				TypeCache.ScanAssembly (137ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (160ms)
+				TypeCache.ScanAssembly (146ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (421ms)
+	FinalizeReload (352ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (356ms)
+		SetupLoadedEditorAssemblies (293ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (161ms)
-			ProcessInitializeOnLoadMethodAttributes (161ms)
+			ProcessInitializeOnLoadAttributes (127ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -137,17 +137,19 @@ scripting_class_is_subclass_of was called with a NULL parameter. This will crash
 scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
 Unloading broken assembly Assets/Packages/Microsoft.Extensions.Options.8.0.0/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll, this assembly can cause crashes in the runtime
 Unloading broken assembly Assets/Packages/Microsoft.Extensions.Logging.Abstractions.8.0.0/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll, this assembly can cause crashes in the runtime
-- Loaded All Assemblies, in  1.129 seconds
+- Loaded All Assemblies, in  1.220 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Refreshing native plugins compatible for Editor in 1.81 ms, found 5 plugins.
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 3.63 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 2.09 ms, found 5 plugins.
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.26 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
 Could not load type of field 'Microsoft.Extensions.Options.Generators.DiagDescriptors:<CantUseWithGenericTypes>k__BackingField' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
 Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
@@ -179,649 +181,64 @@ UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.IOException: Sharing violation on path D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PPostProcessingDefines.cs.cginc
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at System.IO.StreamWriter..ctor (System.String path) [0x00008] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
-  at System.IO.File.WriteAllText (System.String path, System.String contents) [0x00026] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at Pinwheel.Poseidon.PPostProcessingDefines.GeneratePostProcessingDefines () [0x0004b] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PPostProcessingDefines.cs:41 
-  at Pinwheel.Poseidon.PPostProcessingDefines.OnInit () [0x00000] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PPostProcessingDefines.cs:16 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <26627f99a7af447db68cd5961117dc4a>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.586 seconds
-Domain Reload Profiling: 2713ms
-	BeginReloadAssembly (358ms)
+- Finished resetting the current domain, in  1.484 seconds
+Domain Reload Profiling: 2701ms
+	BeginReloadAssembly (335ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (667ms)
-		LoadAssemblies (472ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (782ms)
+		LoadAssemblies (603ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (291ms)
-			TypeCache.Refresh (200ms)
-				TypeCache.ScanAssembly (180ms)
-			BuildScriptInfoCaches (73ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1587ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (205ms)
+				TypeCache.ScanAssembly (189ms)
+			BuildScriptInfoCaches (59ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1484ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1342ms)
+		SetupLoadedEditorAssemblies (1242ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (814ms)
-			ProcessInitializeOnLoadMethodAttributes (459ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (744ms)
+			ProcessInitializeOnLoadMethodAttributes (441ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 4.24 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 2.69 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 343 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6808 unused Assets / (7.7 MB). Loaded Objects now: 7684.
-Memory consumption went from 256.9 MB to 249.2 MB.
-Total: 51.401400 ms (FindLiveObjects: 1.069900 ms CreateObjectMapping: 1.470700 ms MarkObjects: 41.698000 ms  DeleteObjects: 7.161400 ms)
+Unloading 344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6806 unused Assets / (4.8 MB). Loaded Objects now: 7695.
+Memory consumption went from 268.4 MB to 263.6 MB.
+Total: 25.873900 ms (FindLiveObjects: 0.913800 ms CreateObjectMapping: 1.174600 ms MarkObjects: 21.651200 ms  DeleteObjects: 2.132800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7688.075313 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(62e2b4ef4529d884aa89b6b89e08079b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerController.cs using Guid(62e2b4ef4529d884aa89b6b89e08079b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'a9af34b61fe64715edba7045010e2394') in 0.0068244 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 11218.497119 seconds.
+  path: Assets/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx
+  artifactKey: Guid(16114d403eabb53438de032c6f0d1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx using Guid(16114d403eabb53438de032c6f0d1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'c6f6e7d0a3200a4d1cbcb8f0aafedd1d') in 0.1310003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 143
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.402278 seconds.
-  path: Assets/Scripts/Player/PlayerController.cs
-  artifactKey: Guid(9c0f69278dbfdee43b5bdc83286d7054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerController.cs using Guid(9c0f69278dbfdee43b5bdc83286d7054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '3ccdc65d167213ca372595ae8e1cdd43') in 0.0004734 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.76 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6788 unused Assets / (5.6 MB). Loaded Objects now: 7685.
-Memory consumption went from 192.1 MB to 186.5 MB.
-Total: 19.885700 ms (FindLiveObjects: 0.574600 ms CreateObjectMapping: 0.506500 ms MarkObjects: 16.438900 ms  DeleteObjects: 2.364500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.09 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6788 unused Assets / (6.9 MB). Loaded Objects now: 7685.
-Memory consumption went from 192.1 MB to 185.1 MB.
-Total: 31.018000 ms (FindLiveObjects: 0.867500 ms CreateObjectMapping: 1.038200 ms MarkObjects: 23.039600 ms  DeleteObjects: 6.071600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 36.098814 seconds.
-  path: Assets/Scripts/RTSScripts/Interfaces/Interfaces.cs
-  artifactKey: Guid(c838e4c8645dd1d4280b190a9d829cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RTSScripts/Interfaces/Interfaces.cs using Guid(c838e4c8645dd1d4280b190a9d829cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '00909cf1923e6e64090c206db5ba4b40') in 0.0225777 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.309537 seconds.
-  path: Assets/Scripts/Interfaces.cs
-  artifactKey: Guid(b5b72d611c3cb9741ad7d48c76d2f7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interfaces.cs using Guid(b5b72d611c3cb9741ad7d48c76d2f7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '2518d431af9eb10c6bb661290572a169') in 0.0005851 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.78 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.3 MB). Loaded Objects now: 7684.
-Memory consumption went from 192.1 MB to 186.8 MB.
-Total: 24.114200 ms (FindLiveObjects: 0.847900 ms CreateObjectMapping: 1.222500 ms MarkObjects: 18.807100 ms  DeleteObjects: 3.234700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.00 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.3 MB). Loaded Objects now: 7684.
-Memory consumption went from 192.1 MB to 186.8 MB.
-Total: 28.719200 ms (FindLiveObjects: 0.823700 ms CreateObjectMapping: 1.603900 ms MarkObjects: 22.203500 ms  DeleteObjects: 4.086200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.03 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.7 MB). Loaded Objects now: 7684.
-Memory consumption went from 192.1 MB to 186.4 MB.
-Total: 29.002000 ms (FindLiveObjects: 0.821000 ms CreateObjectMapping: 1.184300 ms MarkObjects: 23.337500 ms  DeleteObjects: 3.657400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.24 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.6 MB). Loaded Objects now: 7684.
-Memory consumption went from 192.1 MB to 186.5 MB.
-Total: 24.855400 ms (FindLiveObjects: 0.740900 ms CreateObjectMapping: 0.908900 ms MarkObjects: 18.983100 ms  DeleteObjects: 4.220700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.06 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.9 MB). Loaded Objects now: 7684.
-Memory consumption went from 192.1 MB to 186.1 MB.
-Total: 56.223200 ms (FindLiveObjects: 1.027700 ms CreateObjectMapping: 0.956100 ms MarkObjects: 49.364700 ms  DeleteObjects: 4.873400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.72 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.3 MB). Loaded Objects now: 7684.
-Memory consumption went from 192.1 MB to 186.8 MB.
-Total: 28.286500 ms (FindLiveObjects: 1.304900 ms CreateObjectMapping: 1.060300 ms MarkObjects: 22.773600 ms  DeleteObjects: 3.145500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-- Loaded All Assemblies, in  0.699 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 2.37 ms, found 5 plugins.
-Can't find custom attr constructor image: D:\UnityProjects\AI-RPG\AI-RPG\Assets\Packages\Microsoft.Extensions.Options.8.0.0\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Options.SourceGeneration.dll mtoken: 0x0a000013 due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Can't find custom attr constructor image: D:\UnityProjects\AI-RPG\AI-RPG\Assets\Packages\Microsoft.Extensions.Logging.Abstractions.8.0.0\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Logging.Generators.dll mtoken: 0x0a000015 due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.DiagDescriptors:<CantUseWithGenericTypes>k__BackingField' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser:_compilation' (2) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolHolder:<OptionsValidatorSymbol>k__BackingField' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.OptionsValidatorGenerator+<>c:<>9__0_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c:<>9__9_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass16_0:modelType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass19_0:<>9__1' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass1_0:modifierToSearch' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass5_0:returnType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolLoader+<>c__DisplayClass16_0:compilation' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at Pinwheel.Griffin.GCommon.GetAllLoadedTypes () [0x0001e] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\Core\GCommon.cs:702 
-  at Pinwheel.Griffin.PaintTool.GSpawnFilterInitializer.InitFilters () [0x00000] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\PaintTool\SpawnFilters\GSpawnFilterInitializer.cs:23 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <26627f99a7af447db68cd5961117dc4a>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.023 seconds
-Domain Reload Profiling: 1723ms
-	BeginReloadAssembly (178ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (451ms)
-		LoadAssemblies (364ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (167ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (142ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1023ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (787ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (53ms)
-			ProcessInitializeOnLoadAttributes (348ms)
-			ProcessInitializeOnLoadMethodAttributes (374ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 2.60 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6804 unused Assets / (5.3 MB). Loaded Objects now: 7693.
-Memory consumption went from 211.7 MB to 206.4 MB.
-Total: 24.386300 ms (FindLiveObjects: 0.818100 ms CreateObjectMapping: 0.995300 ms MarkObjects: 19.682200 ms  DeleteObjects: 2.888700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 4271.319987 seconds.
-  path: Assets/RonToIntegrate
-  artifactKey: Guid(bc9228276b43baa4787ebcf3d22be40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RonToIntegrate using Guid(bc9228276b43baa4787ebcf3d22be40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '765be89c93cfdca164a196bdd180c005') in 0.1095285 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.443561 seconds.
-  path: Assets/Characters
-  artifactKey: Guid(7b2205e7eb08f104fbc57b4f2092ddf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters using Guid(7b2205e7eb08f104fbc57b4f2092ddf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '3386c8a24cdf6aab934cff9a56048833') in 0.0007611 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.758756 seconds.
-  path: Assets/Input
-  artifactKey: Guid(d62698f1570cc6f49afd5c280091cf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Input using Guid(d62698f1570cc6f49afd5c280091cf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '6c499b23ac8d0d48fc1860d482853958') in 0.0006044 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 4.53 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.6 MB). Loaded Objects now: 7693.
-Memory consumption went from 209.1 MB to 203.5 MB.
-Total: 26.972700 ms (FindLiveObjects: 0.827300 ms CreateObjectMapping: 0.974700 ms MarkObjects: 21.235000 ms  DeleteObjects: 3.934100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.011339 seconds.
-  path: Assets/SphereTest
-  artifactKey: Guid(4008c5c0e5d16314ca5a904f649b06aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SphereTest using Guid(4008c5c0e5d16314ca5a904f649b06aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'c01a297510c2b4ea828a29a111c2ada4') in 0.0134303 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.769053 seconds.
-  path: Assets/ShaderGraph
-  artifactKey: Guid(b6a56900773558146ad75ba4617f766b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ShaderGraph using Guid(b6a56900773558146ad75ba4617f766b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '5736a10e676bfd74d9a9b3d740d1a1ba') in 0.0008502 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-- Loaded All Assemblies, in  0.760 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 1.76 ms, found 5 plugins.
-Can't find custom attr constructor image: D:\UnityProjects\AI-RPG\AI-RPG\Assets\Packages\Microsoft.Extensions.Options.8.0.0\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Options.SourceGeneration.dll mtoken: 0x0a000013 due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Can't find custom attr constructor image: D:\UnityProjects\AI-RPG\AI-RPG\Assets\Packages\Microsoft.Extensions.Logging.Abstractions.8.0.0\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Logging.Generators.dll mtoken: 0x0a000015 due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.DiagDescriptors:<CantUseWithGenericTypes>k__BackingField' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser:_compilation' (2) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolHolder:<OptionsValidatorSymbol>k__BackingField' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.OptionsValidatorGenerator+<>c:<>9__0_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c:<>9__9_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass16_0:modelType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass19_0:<>9__1' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass1_0:modifierToSearch' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass5_0:returnType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolLoader+<>c__DisplayClass16_0:compilation' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at Pinwheel.Griffin.GCommon.GetAllLoadedTypes () [0x0001e] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\Core\GCommon.cs:702 
-  at Pinwheel.Griffin.PaintTool.GSpawnFilterInitializer.InitFilters () [0x00000] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\PaintTool\SpawnFilters\GSpawnFilterInitializer.cs:23 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <26627f99a7af447db68cd5961117dc4a>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.133 seconds
-Domain Reload Profiling: 1896ms
-	BeginReloadAssembly (198ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (476ms)
-		LoadAssemblies (394ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (178ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (151ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1134ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (905ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (382ms)
-			ProcessInitializeOnLoadMethodAttributes (467ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 2.79 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6804 unused Assets / (5.4 MB). Loaded Objects now: 7695.
-Memory consumption went from 210.4 MB to 205.1 MB.
-Total: 26.021000 ms (FindLiveObjects: 0.722900 ms CreateObjectMapping: 0.806600 ms MarkObjects: 20.719500 ms  DeleteObjects: 3.770500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.343069 seconds.
-  path: Assets/SphereTest/New Material.mat
-  artifactKey: Guid(708c48af803754c4ea66dcd10108d658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SphereTest/New Material.mat using Guid(708c48af803754c4ea66dcd10108d658) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'ed13c068c67838a34cffa09bf908d724') in 0.4345823 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ShaderGraph/Outline.mat
-  artifactKey: Guid(d6ea183b924c08c47869fe136bf57564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ShaderGraph/Outline.mat using Guid(d6ea183b924c08c47869fe136bf57564) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'dec48a315105e48e6548840a51b638b2') in 0.0082263 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Prepare
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 2.86 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6787 unused Assets / (5.4 MB). Loaded Objects now: 7880.
-Memory consumption went from 286.1 MB to 280.7 MB.
-Total: 30.083400 ms (FindLiveObjects: 1.606800 ms CreateObjectMapping: 1.191200 ms MarkObjects: 23.530900 ms  DeleteObjects: 3.753200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-scripting_class_is_subclass_of was called with a NULL parameter. This will crash the game if it happens outside of the editor.
-- Loaded All Assemblies, in  0.753 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 1.56 ms, found 5 plugins.
-Can't find custom attr constructor image: D:\UnityProjects\AI-RPG\AI-RPG\Assets\Packages\Microsoft.Extensions.Options.8.0.0\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Options.SourceGeneration.dll mtoken: 0x0a000013 due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Can't find custom attr constructor image: D:\UnityProjects\AI-RPG\AI-RPG\Assets\Packages\Microsoft.Extensions.Logging.Abstractions.8.0.0\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Logging.Generators.dll mtoken: 0x0a000015 due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.DiagDescriptors:<CantUseWithGenericTypes>k__BackingField' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser:_compilation' (2) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolHolder:<OptionsValidatorSymbol>k__BackingField' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.OptionsValidatorGenerator+<>c:<>9__0_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c:<>9__9_0' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass16_0:modelType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.Parser+<>c__DisplayClass19_0:<>9__1' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass1_0:modifierToSearch' (1) due to: Could not load file or assembly 'Microsoft.CodeAnalysis.CSharp, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.ParserUtilities+<>c__DisplayClass5_0:returnType' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-Could not load type of field 'Microsoft.Extensions.Options.Generators.SymbolLoader+<>c__DisplayClass16_0:compilation' (0) due to: Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
-  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at Pinwheel.Griffin.GCommon.GetAllLoadedTypes () [0x0001e] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\Core\GCommon.cs:702 
-  at Pinwheel.Griffin.PaintTool.GSpawnFilterInitializer.InitFilters () [0x00000] in D:\UnityProjects\AI-RPG\AI-RPG\Assets\Assets\Polaris - Low Poly Ecosystem\Polaris - Low Poly Terrain Engine\Runtime\Scripts\PaintTool\SpawnFilters\GSpawnFilterInitializer.cs:23 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <f22cb97e7aa5412ba04225fa1fc145f2>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <26627f99a7af447db68cd5961117dc4a>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.135 seconds
-Domain Reload Profiling: 1890ms
-	BeginReloadAssembly (192ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (474ms)
-		LoadAssemblies (376ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (179ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (152ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1136ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (900ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (341ms)
-			ProcessInitializeOnLoadMethodAttributes (500ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 3.70 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6804 unused Assets / (5.9 MB). Loaded Objects now: 7762.
-Memory consumption went from 218.1 MB to 212.2 MB.
-Total: 27.933700 ms (FindLiveObjects: 0.856800 ms CreateObjectMapping: 1.690900 ms MarkObjects: 21.583100 ms  DeleteObjects: 3.801300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 27.841434 seconds.
-  path: Assets/Polygon-Lite Survival Collection
-  artifactKey: Guid(2091464b2ae9d9a40a3a8bb0ba5334db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polygon-Lite Survival Collection using Guid(2091464b2ae9d9a40a3a8bb0ba5334db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '7147839b1bdfa0d4edbeaec701523ce1') in 0.0287514 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.109224 seconds.
-  path: Assets/RonToIntegrate/Graphics/TCom_Ground_Grass02_2x2_512_albedo.tif
-  artifactKey: Guid(07a5d62eedf332447a2da398532c65b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RonToIntegrate/Graphics/TCom_Ground_Grass02_2x2_512_albedo.tif using Guid(07a5d62eedf332447a2da398532c65b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '05227633bd9a16e50e21019f3ccf4683') in 0.0538433 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.619584 seconds.
-  path: Assets/Prefabs/BasicCharacter.prefab
-  artifactKey: Guid(5b886561c9d4aef4eb7e0af3e9c0756c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasicCharacter.prefab using Guid(5b886561c9d4aef4eb7e0af3e9c0756c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'dfd2aba010b4033cbe0bc63f6dc27353') in 0.5841341 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1298
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Prefabs/Particle waves.prefab
-  artifactKey: Guid(f4ee4bdba0e463c459ad509d690386dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Particle waves.prefab using Guid(f4ee4bdba0e463c459ad509d690386dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'a85167ee8dc008e9fab3892f1e77c4d3') in 0.0534885 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 356
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(5e58adbbacde1664d82aec3c0bee674d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(5e58adbbacde1664d82aec3c0bee674d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '14383f17bdaf7e2f593b7232d8bbfa29') in 0.1501983 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 442
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Prefabs/Teleport.prefab
-  artifactKey: Guid(7c8930789f4eb7e4d93c92758fb54e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Teleport.prefab using Guid(7c8930789f4eb7e4d93c92758fb54e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '6b6904aba929e1060e2de1b4d615f38e') in 0.0582126 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 58
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Prefabs/InputHandler.prefab
-  artifactKey: Guid(f7e983945045ff54f950e46a519b7b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/InputHandler.prefab using Guid(f7e983945045ff54f950e46a519b7b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'd03741e870e30481ba69c5c9251b9240') in 0.0033115 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Prefabs/CameraPivot.prefab
-  artifactKey: Guid(3d87c8f89691e7f428381b5d7de51879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/CameraPivot.prefab using Guid(3d87c8f89691e7f428381b5d7de51879) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '9896017d735df5f9633443ec5712f92b') in 0.0017066 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx
+  artifactKey: Guid(063aa479676c4084ebf187660ca0a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx using Guid(063aa479676c4084ebf187660ca0a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '383c1df9330ce0962a2b483f6312510d') in 0.0033067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 143
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

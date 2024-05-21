@@ -122,6 +122,8 @@ public class PlayerController : SerializedMonoBehaviour
 
 	bool isPortBuilding;
 
+	bool isInAir;
+
 	private void Awake () {
 		if (instance == null) {
 			instance = this;
@@ -250,7 +252,7 @@ public class PlayerController : SerializedMonoBehaviour
 		movementVector = Vector3.Lerp (movementVector, previousFramemovementVector, 0.2f);
 
 		animator.SetFloat ("MovementBlend", frameInput.getMovementInput.y);
-
+		
 		characterController.Move (movementVector);
 
 		previousFramemovementVector = movementVector;
@@ -307,6 +309,8 @@ public class PlayerController : SerializedMonoBehaviour
 		sprintModifier = stats.getAccelerationCurve.Evaluate (t);
 
 		animator.SetFloat ("RunningBlend", sprintModifier);
+
+		animator.SetBool ("IsGrounded", isGrounded ());
 
 		modifiedMovementSpeed = Mathf.Lerp (stats.getWalkSpeed, stats.getSprintSpeed, sprintModifier);
 
@@ -589,6 +593,13 @@ public class PlayerController : SerializedMonoBehaviour
 	}
 
 	bool isGrounded () {
+		if (!isInAir && characterController.isGrounded) {
+			
+			//need to stop player movement for sec
+
+		}
+
+		isInAir = characterController.isGrounded;
 		return characterController.isGrounded;
 	}
 
