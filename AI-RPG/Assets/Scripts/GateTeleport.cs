@@ -31,5 +31,17 @@ public class GateTeleport : MonoBehaviour, Interactable
 	public void ToggleInteractUI (bool state) {
 		interactCanvas.gameObject.SetActive (state);
 	}
+
+	public void OnInterractRTS (Group group) {
+		throw new System.NotImplementedException ();
+	}
+
+	public void OnInterractPerson () {
+		throw new System.NotImplementedException ();
+	}
+
+	public bool isInterractable () {
+		throw new System.NotImplementedException ();
+	}
 	#endregion
 }

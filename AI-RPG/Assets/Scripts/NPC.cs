@@ -50,5 +50,17 @@ public class NPC : MonoBehaviour , Interactable
         interactCanvas.gameObject.SetActive(state);
     }
 
+	public void OnInterractRTS (Group group) {
+		throw new NotImplementedException ();
+	}
+
+	public void OnInterractPerson () {
+		throw new NotImplementedException ();
+	}
+
+	public bool isInterractable () {
+		throw new NotImplementedException ();
+	}
+
 	#endregion
 }
