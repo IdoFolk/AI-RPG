@@ -6,7 +6,7 @@ public class NPC : MonoBehaviour , Interactable
 {
     [SerializeField] private NPCAIConfig aiConfig;
     [SerializeField] private OpenAIController openAIController;
-    [SerializeField] private CinemachineVirtualCameraBase dialogCamera;
+    [SerializeField] private CinemachineCamera dialogCamera;
     [SerializeField] private Canvas dialogCanvas;
     [SerializeField] private Canvas interactCanvas;
     private Player _player;

@@ -13,6 +13,9 @@ public class PlayerController : SerializedMonoBehaviour
 	public static PlayerController instance;
 
 	[SerializeField]
+	Player player;
+
+	[SerializeField]
 	Character_Handler characterHandler;
 	public Character_Handler getCharacterHandler => characterHandler;
 
@@ -418,6 +421,8 @@ public class PlayerController : SerializedMonoBehaviour
 	void Interract () {
 		Debug.Log ("Interract");
 		RaycastHit raycastHit;
+
+		player.OnInteract ();
 
 		if(carriedObject!= null) {
 			DetachCarriedObject ();
