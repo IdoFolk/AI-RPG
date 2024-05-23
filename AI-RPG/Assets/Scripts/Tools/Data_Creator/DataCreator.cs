@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
+using NUnit.Framework;
 
 
 
@@ -14,7 +15,10 @@ public class DataCreator : OdinMenuEditorWindow {
 
 	[HideInInspector]
 	public string resourcesDatabasePath = "Assets/Data/Resources/";
-	
+
+	[HideInInspector]
+	public string abilitiesDatabasePath = "Assets/Data/Abilities/";
+
 	[HideInInspector]
 	public string prefix = "Data_";
 
@@ -49,8 +53,10 @@ public class DataCreator : OdinMenuEditorWindow {
 
 		tree.Selection.SupportsMultiSelect = false;
 		tree.Add ("Datas Creators/Create Resource", new DataAssetCreator(this,"Data_Resource"),EditorIcons.Plus);
+		tree.Add ("Datas Creators/Create Ability", new DataAssetCreator (this,"Data_Ability"), EditorIcons.Plus);
 
 		tree.AddAllAssetsAtPath ("Datas/Resources", resourcesDatabasePath,typeof(DataCreator_Data));
+		tree.AddAllAssetsAtPath ("Datas/Abilities", abilitiesDatabasePath, typeof (DataCreator_Data));
 
 		var treeaa = new OdinMenuTree () {
 			{"Main",this,EditorIcons.House }
@@ -60,11 +66,14 @@ public class DataCreator : OdinMenuEditorWindow {
 			if (tree.MenuItems.Count > 1)
 				tree.MenuItems[1].AddIcon (SdfIconType.List);
 
-			if (tree.MenuItems.Count > 2)
+			if (tree.MenuItems.Count > 2) {
+
 				tree.MenuItems[2].AddIcon (SdfIconType.List);
 
-			for (int i = 0; i < tree.MenuItems[2].ChildMenuItems.Count; i++) {
-				tree.MenuItems[2].ChildMenuItems[i].AddIcon (SdfIconType.ListNested);
+				if (tree.MenuItems[2].ChildMenuItems != null)
+					for (int i = 0; i < tree.MenuItems[2].ChildMenuItems.Count; i++) {
+						tree.MenuItems[2].ChildMenuItems[i].AddIcon (SdfIconType.ListNested);
+					}
 			}
 
 		}
@@ -131,13 +140,18 @@ public class DataCreator : OdinMenuEditorWindow {
 	}
 
 	public class DataAssetCreator : AssetCreator {
-		public DataAssetCreator (DataCreator _dataCreator,string dataType) {
+		public DataAssetCreator (DataCreator _dataCreator,string _dataType) {
 			dataCreator = _dataCreator;
+			dataType = _dataType;
 			// opens new SO for edition before saving
 
 			switch (dataType) {
 				case "Data_Resource":
 					newData = ScriptableObject.CreateInstance<Data_Resource> ();
+					break;
+
+				case "Data_Ability":
+					newData = ScriptableObject.CreateInstance<Data_Ability_Basic> ();
 					break;
 
 				default:
@@ -152,10 +166,31 @@ public class DataCreator : OdinMenuEditorWindow {
 		[HideLabel, InlineEditor (Expanded = true)]
 		public DataCreator_Data newData;
 
+		string dataType;
+
 		[TabGroup ("Datas")]
 		[Button ("Create new DataGroup")]
 		private void CreateNew () {
-			CreateNewAsset (newData, dataCreator.resourcesDatabasePath, dataCreator.prefix + newData.Name, ".asset");
+			string targetPath = string.Empty;
+			
+			switch (dataType) {
+				case "Data_Resource":
+					targetPath = dataCreator.resourcesDatabasePath;
+					break;
+
+				case "Data_Ability":
+					targetPath = dataCreator.abilitiesDatabasePath;
+					break;
+					
+
+				default:
+					break;
+			}
+
+			if (targetPath == string.Empty)
+				return;
+
+			CreateNewAsset (newData, targetPath, dataCreator.prefix + newData.Name, ".asset");
 			
 		}
 	}

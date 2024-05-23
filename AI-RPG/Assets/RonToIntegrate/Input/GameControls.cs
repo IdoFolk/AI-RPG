@@ -86,7 +86,7 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                     ""name"": ""FlightMode"",
                     ""type"": ""Button"",
                     ""id"": ""b1da9e55-ef35-4a65-a227-c21e33ff6a94"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
