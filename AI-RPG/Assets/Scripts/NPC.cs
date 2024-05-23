@@ -2,7 +2,7 @@ using System;
 using Unity.Cinemachine;
 using UnityEngine;
 using static Interfaces;
-public class NPC : MonoBehaviour , Interactable
+public class NPC : MonoBehaviour , Interactable 
 {
     [SerializeField] private NPCAIConfig aiConfig;
     [SerializeField] private OpenAIController openAIController;
@@ -32,16 +32,20 @@ public class NPC : MonoBehaviour , Interactable
 
 	public void Interact(Player player)
     {
-        _player = player;
-        dialogCanvas.gameObject.SetActive(true);
+		_player = player;
+        UiManager.instance.OpenNpcMenu (this);
+        
+        //dialogCanvas.gameObject.SetActive(true);
         dialogCamera.gameObject.SetActive(true);
         interactCanvas.gameObject.SetActive(false);
     }
     public void CancelInteract()
     {
-        dialogCanvas.gameObject.SetActive(false);
+        //dialogCanvas.gameObject.SetActive(false);
         dialogCamera.gameObject.SetActive(false);
         interactCanvas.gameObject.SetActive(true);
+        UiManager.instance.CloseCurrentOpenMenus ();
+
         _player.CancelInteract();
     }
 

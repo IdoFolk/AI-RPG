@@ -25,6 +25,9 @@ public class UiManager : MonoBehaviour
 	UI_Menu machineMenu;
 
 	[SerializeField]
+	UI_Menu NpcMenu;
+
+	[SerializeField]
 	Ui_EscapeMenu escapeMenu;
 	// Start is called before the first frame update
 
@@ -47,8 +50,10 @@ public class UiManager : MonoBehaviour
 		playerMenu.gameObject.SetActive (false);
 		playerMachineMenu.gameObject.SetActive (false);
 		machineMenu.gameObject.SetActive (false);
-		
-    }
+
+		OpenPlayerHud ();
+
+	}
 
     // Update is called once per frame
     void Update()
@@ -123,6 +128,22 @@ public class UiManager : MonoBehaviour
 		uiInputEnabled = true;
 	}
 
+
+	public void OpenNpcMenu (NPC npc) {
+		PlayerController.instance.ToggleController (false);
+
+		Cursor.lockState = CursorLockMode.None;
+
+		NpcMenu.gameObject.SetActive (true);
+
+		NpcMenu.OnSelectCategory (UI_Menu.MenuCategory.Chat);
+		
+		currentOpenMenus.Add (NpcMenu);
+		
+		ClosePlayerHud ();
+
+		uiInputEnabled = true;
+	}
 	void OpenPlayerHud () {
 		playerHud.gameObject.SetActive (true);
     }

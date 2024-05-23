@@ -108,7 +108,7 @@
                     "name": "E",
                     "type": "Button",
                     "id": "e40d32e9-f45a-421e-8206-66bda2ee8a9c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

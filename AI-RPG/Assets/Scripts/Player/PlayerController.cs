@@ -172,7 +172,11 @@ public class PlayerController : SerializedMonoBehaviour
 
 	public void ToggleController (bool toggle) {
 		isControllerEnabled= toggle;
-		virtualCamera.gameObject.SetActive(toggle);
+
+		//not sure if needed
+		//previousFramemovementVector = toggle ? previousFramemovementVector : Vector3.zero;
+
+		//virtualCamera.gameObject.SetActive(toggle);
 	}
 
 	private void TakeInputs (FrameInput newFrameInput) {
@@ -215,6 +219,11 @@ public class PlayerController : SerializedMonoBehaviour
 
 		if (frameInput.getStats) {
 			UiManager.instance.OpenPlayerMenu (UI_Menu.MenuCategory.Stats);
+		}
+
+		if (frameInput.getButtonE) {
+			player.OnInteract ();
+
 		}
 
 		characterHandler.getAbilityHandler.CheckAbilityInputs ();
@@ -399,11 +408,11 @@ public class PlayerController : SerializedMonoBehaviour
 		yVelcoity -= gravity;
 	}
 
-	private void DisableMovement () {
+	public void DisableMovement () {
 		blockMovement = true;
 	}
 
-	private void EnableMovement () {
+	public void EnableMovement () {
 		blockMovement = false;
 	}
 
@@ -421,8 +430,6 @@ public class PlayerController : SerializedMonoBehaviour
 	void Interract () {
 		Debug.Log ("Interract");
 		RaycastHit raycastHit;
-
-		player.OnInteract ();
 
 		if(carriedObject!= null) {
 			DetachCarriedObject ();
@@ -650,6 +657,8 @@ public class PlayerController : SerializedMonoBehaviour
 	private void OnDrawGizmos () {
 
 		Gizmos.color = Color.blue;
+
+		if(Camera.main)
 		Gizmos.DrawLine (Camera.main.transform.position, Camera.main.transform.position +  Camera.main.transform.forward * 10);
 		//Physics.Raycast (/*transform.position + Vector3.up * 0.3f*/ Camera.main.transform.position, /*graphics.transform.forward*/ Camera.main.transform.forward, out interractionRayHit, 10, interractionLayer);
 	}

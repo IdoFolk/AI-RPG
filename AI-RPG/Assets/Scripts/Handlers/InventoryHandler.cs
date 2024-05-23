@@ -5,12 +5,26 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using static Interfaces;
 using static Delegates;
+using Unity.VisualScripting;
 
 public class InventoryHandler : SerializedMonoBehaviour
 {
     float maxInventorySpace = 30;
     public float getMaxInventorySpace;
 
+    [SerializeField]
+	Dictionary<Interfaces.InventoryHeldObject, float> GiveOnStart= new ();
+
+
+	private void Start () {
+
+		foreach(KeyValuePair<Interfaces.InventoryHeldObject, float> pair in GiveOnStart) {
+            AddItemToInventory(pair.Key, pair.Value);
+        }
+	}
+
+
+	[Space(20)]
     [ReadOnly]
     [SerializeField]
     Dictionary<Interfaces.InventoryHeldObject ,float> inventoryHeldObjects = new();

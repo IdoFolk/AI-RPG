@@ -146,7 +146,7 @@ public class MarketAIController : SerializedMonoBehaviour
 		//yearProgress = currentTime / yearCycle.getMonthlySeconds * yearCycle.getAmountOfMonths;
 
 
-		transform.position = transform.position + Vector3.up * MathF.Sin (Time.time);
+		transform.position = transform.position + Vector3.up * 0.2f * Time.deltaTime * MathF.Sin (Time.time);
 
 	}
 

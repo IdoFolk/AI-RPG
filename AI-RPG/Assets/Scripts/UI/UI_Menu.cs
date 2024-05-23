@@ -11,7 +11,8 @@ public class UI_Menu : SerializedMonoBehaviour
         Crafting = 20,
         Map = 30,
         Stats = 40,
-    }
+		Chat = 50,
+	}
 
     [SerializeField]
     [HideReferenceObjectPicker]

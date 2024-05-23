@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using static Interfaces;
 public class GateTeleport : MonoBehaviour, Interactable
@@ -18,13 +19,24 @@ public class GateTeleport : MonoBehaviour, Interactable
 	#region Interactable
 	public void Interact (Player player) {
 		_player = player;
-		player.gameObject.SetActive (false);
+		Debug.Log ("interract");
+		//player.gameObject.SetActive (false);
+		StartCoroutine (TeleportRoutine ());
+	}
+
+	IEnumerator TeleportRoutine () {
 		interactCanvas.gameObject.SetActive (false);
-		
-		player.transform.position = corespondingTeleport.getTargetPoint.position;
+		PlayerController.instance.ToggleController (false);
+		//PlayerController.instance.DisableMovement ();
+		_player.transform.position = corespondingTeleport.getTargetPoint.position;
+
+		yield return null;
+
+		CancelInteract ();
 	}
 	public void CancelInteract () {
 		interactCanvas.gameObject.SetActive (true);
+		PlayerController.instance.ToggleController (true);
 		_player.CancelInteract ();
 	}
 
