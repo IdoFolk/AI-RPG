@@ -25,6 +25,10 @@ public class MarketAIController : SerializedMonoBehaviour
 	float currentTime;
 
 	[SerializeField]
+	[Tooltip("Will return a difault answer to not use the api services")]
+	bool disableAI;
+
+	[SerializeField]
 	string marketLocation;
 
 	[ShowIf ("isInPlay")]
@@ -45,6 +49,7 @@ public class MarketAIController : SerializedMonoBehaviour
 
 	[SerializeField]
     List<MarketFruit> marketFruits;
+
 
     bool fruitsEnabled = true;
 
@@ -164,6 +169,11 @@ public class MarketAIController : SerializedMonoBehaviour
 	private async void GetResponse () {
 		// Disable the OK button
 		//okButton.enabled = false;
+
+		if (disableAI) {
+			TestProccessResponse ();
+			return;
+		}
 
 		// Fill the user message from the input field
 		ChatMessage userMessage = new ChatMessage ();
