@@ -138,7 +138,7 @@ public class MarketAIController : SerializedMonoBehaviour
 		// This line gets your API key (and could be slightly different on Mac/Linux)
 		api = new OpenAIAPI (Environment.GetEnvironmentVariable ("OPENAI_API_KEY", EnvironmentVariableTarget.User));
 		StartConversation ();
-		//okButton.onClick.AddListener (() => GetResponse ());
+		okButton.onClick.AddListener (() => GetResponse ());
 	}
 
 	void Update () {
@@ -146,7 +146,7 @@ public class MarketAIController : SerializedMonoBehaviour
 		//yearProgress = currentTime / yearCycle.getMonthlySeconds * yearCycle.getAmountOfMonths;
 
 
-		transform.position = transform.position + Vector3.up * 0.2f * Time.deltaTime * MathF.Sin (Time.time);
+		transform.position = transform.position + Vector3.up * 0.01f * Time.deltaTime * MathF.Sin (Time.time);
 
 	}
 

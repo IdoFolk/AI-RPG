@@ -382,7 +382,7 @@ public class PlayerController : SerializedMonoBehaviour
 
 		Vector3 rotationVector = new Vector3 (0, yRotation, 0) * stats.getRotationSpeed;
 
-		rotationVector = Vector3.Lerp (rotationVector, previousFramerotationVector,0.1f);
+		rotationVector = Vector3.Lerp (rotationVector, previousFramerotationVector,Time.deltaTime * 0.1f);
 
 		if (rotationVector != Vector3.zero)
 		graphics.transform.Rotate (rotationVector,Space.Self);
@@ -477,7 +477,6 @@ public class PlayerController : SerializedMonoBehaviour
 			//}
 
 		} else if(triggerInteractable != null) {
-			Debug.Log ("INTERRATC");
 			triggerInteractable.Interact ();
 		}
 
