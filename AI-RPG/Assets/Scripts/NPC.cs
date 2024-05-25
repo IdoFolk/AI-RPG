@@ -2,7 +2,7 @@ using System;
 using Unity.Cinemachine;
 using UnityEngine;
 using static Interfaces;
-public class NPC : MonoBehaviour , Interactable 
+public class NPC : MonoBehaviour , Interactable, OnPointed
 {
     [SerializeField] private NPCAIConfig aiConfig;
     [SerializeField] private OpenAIController openAIController;
@@ -30,28 +30,28 @@ public class NPC : MonoBehaviour , Interactable
 
 	#region Interactable
 
-	public void Interact(Player player)
+	public void Interact()
     {
-		_player = player;
+        Debug.Log ("Interractnpc");
+		
+		PlayerController.instance.ToggleGraphics (false);
+
         UiManager.instance.OpenNpcMenu (this);
         
+
         //dialogCanvas.gameObject.SetActive(true);
         dialogCamera.gameObject.SetActive(true);
         interactCanvas.gameObject.SetActive(false);
-    }
-    public void CancelInteract()
+		
+	}
+	public void CancelInteract()
     {
+        PlayerController.instance.ToggleGraphics (true);
+
         //dialogCanvas.gameObject.SetActive(false);
         dialogCamera.gameObject.SetActive(false);
         interactCanvas.gameObject.SetActive(true);
-        UiManager.instance.CloseCurrentOpenMenus ();
-
-        _player.CancelInteract();
-    }
-
-    public void ToggleInteractUI(bool state)
-    {
-        interactCanvas.gameObject.SetActive(state);
+      
     }
 
 	public void OnInterractRTS (Group group) {
@@ -63,7 +63,15 @@ public class NPC : MonoBehaviour , Interactable
 	}
 
 	public bool isInterractable () {
-		throw new NotImplementedException ();
+		return true;
+	}
+
+	public void onPointed () {
+		interactCanvas.gameObject.SetActive (true);
+	}
+
+	public void onPointRemove () {
+		interactCanvas.gameObject.SetActive (false);
 	}
 
 	#endregion

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using static Interfaces;
-public class GateTeleport : MonoBehaviour, Interactable
+public class GateTeleport : MonoBehaviour, Interactable , OnPointed
 {
 	[SerializeField] private Canvas interactCanvas;
 
@@ -14,11 +14,9 @@ public class GateTeleport : MonoBehaviour, Interactable
 
     public Transform getTargetPoint => targetPoint;
 
-	private Player _player;
-
 	#region Interactable
-	public void Interact (Player player) {
-		_player = player;
+	public void Interact () {
+		
 		Debug.Log ("interract");
 		//player.gameObject.SetActive (false);
 		StartCoroutine (TeleportRoutine ());
@@ -28,8 +26,7 @@ public class GateTeleport : MonoBehaviour, Interactable
 		interactCanvas.gameObject.SetActive (false);
 		PlayerController.instance.ToggleController (false);
 		//PlayerController.instance.DisableMovement ();
-		_player.transform.position = corespondingTeleport.getTargetPoint.position;
-
+		PlayerController.instance.transform.position = corespondingTeleport.getTargetPoint.position;
 		yield return null;
 
 		CancelInteract ();
@@ -37,7 +34,6 @@ public class GateTeleport : MonoBehaviour, Interactable
 	public void CancelInteract () {
 		interactCanvas.gameObject.SetActive (true);
 		PlayerController.instance.ToggleController (true);
-		_player.CancelInteract ();
 	}
 
 	public void ToggleInteractUI (bool state) {
@@ -53,7 +49,16 @@ public class GateTeleport : MonoBehaviour, Interactable
 	}
 
 	public bool isInterractable () {
-		throw new System.NotImplementedException ();
+		return true;
 	}
+
+	public void onPointed () {
+		interactCanvas.gameObject.SetActive (true);
+	}
+
+	public void onPointRemove () {
+		interactCanvas.gameObject.SetActive (false);
+	}
+
 	#endregion
 }

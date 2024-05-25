@@ -50,7 +50,7 @@ public class UiManager : MonoBehaviour
 		playerMenu.gameObject.SetActive (false);
 		playerMachineMenu.gameObject.SetActive (false);
 		machineMenu.gameObject.SetActive (false);
-
+		NpcMenu.gameObject.SetActive(false);
 		OpenPlayerHud ();
 
 	}
@@ -143,6 +143,8 @@ public class UiManager : MonoBehaviour
 		ClosePlayerHud ();
 
 		uiInputEnabled = true;
+
+		NpcMenu.delegate_OnMenuClosed += npc.CancelInteract;
 	}
 	void OpenPlayerHud () {
 		playerHud.gameObject.SetActive (true);

@@ -7,13 +7,12 @@ using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Interfaces;
 
 public class PlayerController : SerializedMonoBehaviour
 {
 	public static PlayerController instance;
 
-	[SerializeField]
-	Player player;
 
 	[SerializeField]
 	Character_Handler characterHandler;
@@ -179,6 +178,15 @@ public class PlayerController : SerializedMonoBehaviour
 		//virtualCamera.gameObject.SetActive(toggle);
 	}
 
+	public void ToggleGraphics (bool toggle) {
+		graphics.SetActive (toggle);
+
+		//not sure if needed
+		//previousFramemovementVector = toggle ? previousFramemovementVector : Vector3.zero;
+
+		//virtualCamera.gameObject.SetActive(toggle);
+	}
+
 	private void TakeInputs (FrameInput newFrameInput) {
 		if (!isControllerEnabled) {
 			frameInput = null;
@@ -200,8 +208,12 @@ public class PlayerController : SerializedMonoBehaviour
 			if (isPortBuilding) {
 				ApplyPortBuilding ();
 			} else {
-				Interract ();
+				Interract(true);
 			}
+		}
+
+		if (frameInput.getButtonE) {
+			Interract (false);
 		}
 
 		if (frameInput.getInventory) {
@@ -219,11 +231,6 @@ public class PlayerController : SerializedMonoBehaviour
 
 		if (frameInput.getStats) {
 			UiManager.instance.OpenPlayerMenu (UI_Menu.MenuCategory.Stats);
-		}
-
-		if (frameInput.getButtonE) {
-			player.OnInteract ();
-
 		}
 
 		characterHandler.getAbilityHandler.CheckAbilityInputs ();
@@ -454,29 +461,54 @@ public class PlayerController : SerializedMonoBehaviour
 		return true;
 	}
 
-	void Interract () {
-		Debug.Log ("Interract");
+	void Interract (bool isPyhsical) {
+		if (isPyhsical) {
+			PhysicalInerract ();
+			return;
+		}
+		Debug.Log (didInterractionRayHit);
+		if (didInterractionRayHit) {
+			if (interractionRayHit.transform.TryGetComponent<Interfaces.Interactable> (out Interfaces.Interactable interactable)) {
+				interactable.Interact ();
+			}
+
+			//if (interractionRayHit.transform.TryGetComponent<NPC> (out NPC npc)) {
+			//	UiManager.instance.OpenNpcMenu (npc);
+			//}
+
+		} else if(triggerInteractable != null) {
+			Debug.Log ("INTERRATC");
+			triggerInteractable.Interact ();
+		}
+
+
+
+
+	}
+
+
+	void PhysicalInerract () {
 		RaycastHit raycastHit;
 
-		if(carriedObject!= null) {
+		if (carriedObject != null) {
 			DetachCarriedObject ();
 			return;
 		}
 
 
-		if(didInterractionRayHit){
+		if (didInterractionRayHit) {
 			if (interractionRayHit.transform.TryGetComponent<CarryableObject> (out CarryableObject carryableObject)) {
 
 				Debug.Log (carryableObject);
 				carriedObject = carryableObject;
-				StartCoroutine (CarryObject());
+				StartCoroutine (CarryObject ());
 
 				return;
 			}
 
-			if (interractionRayHit.transform.TryGetComponent<Machine> (out Machine machine)) {
-				UiManager.instance.OpenMachineMenu(machine);
-			}
+			//if (interractionRayHit.transform.TryGetComponent<Machine> (out Machine machine)) {
+			//	UiManager.instance.OpenMachineMenu (machine);
+			//}
 
 
 			if (interractionRayHit.transform.TryGetComponent<OutputPort> (out OutputPort outputPort)) {
@@ -485,7 +517,7 @@ public class PlayerController : SerializedMonoBehaviour
 				currentBuiltPort.getPortConnectionLineRenderer.gameObject.SetActive (true);
 			}
 
-			
+
 		}
 	}
 
@@ -510,6 +542,23 @@ public class PlayerController : SerializedMonoBehaviour
 
 		}
 	}
+
+
+	Interactable triggerInteractable;
+	private void OnTriggerEnter (Collider other) {
+		if (other.GetComponentInParent<Interactable> () != null) {
+			triggerInteractable = other.GetComponentInParent<Interactable> ();
+			
+		}
+	}
+	private void OnTriggerExit (Collider other) {
+		if (other.GetComponentInParent<Interactable> () != null) {
+			triggerInteractable = null;
+		}
+	}
+
+
+
 
 	RaycastHit interractionRayHit;
 	bool didInterractionRayHit;

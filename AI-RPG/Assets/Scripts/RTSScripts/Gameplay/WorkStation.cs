@@ -34,6 +34,10 @@ public class WorkStation : MonoBehaviour, Interactable {
 		throw new System.NotImplementedException ();
 	}
 
+	public void Interact () {
+		throw new System.NotImplementedException ();
+	}
+
 	public bool isInterractable () {
 		return true;
 	}

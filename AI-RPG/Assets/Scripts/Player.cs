@@ -19,31 +19,31 @@ public class Player : MonoBehaviour
      //   thirdPersonController ??= GetComponent<ThirdPersonController>();
     }
 
-    public void OnInteract(InputAction.CallbackContext callbackContext)
-    {
-        if (interactable != null)
-        {
-            if (interactable is NPC) {
-                gameObject.SetActive (false);
-                Cursor.visible = true;
-               // starterAssetsInputs.cursorLocked = false;
-                Cursor.lockState = CursorLockMode.None;
-            }
-                _isInteracting = true;
-                interactable.Interact (this);
-        }
-    }
+    //public void OnInteract(InputAction.CallbackContext callbackContext)
+    //{
+    //    if (interactable != null)
+    //    {
+    //        if (interactable is NPC) {
+    //            gameObject.SetActive (false);
+    //            Cursor.visible = true;
+    //           // starterAssetsInputs.cursorLocked = false;
+    //            Cursor.lockState = CursorLockMode.None;
+    //        }
+    //            _isInteracting = true;
+    //            interactable.Interact (this);
+    //    }
+    //}
 
 	public void OnInteract () {
 		if (interactable != null) {
 			if (interactable is NPC) {
-				gameObject.SetActive (false);
+				//gameObject.SetActive (false);
 				Cursor.visible = true;
 				// starterAssetsInputs.cursorLocked = false;
 				Cursor.lockState = CursorLockMode.None;
 			}
 			_isInteracting = true;
-			interactable.Interact (this);
+			interactable.Interact ();
 		}
 	}
 
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
         if(!_isInteracting) return;
 
         if (interactable is NPC) {
-            gameObject.SetActive (true);
+            //gameObject.SetActive (true);
             Cursor.visible = false;
             //starterAssetsInputs.cursorLocked = true;
             Cursor.lockState = CursorLockMode.Locked;
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
         if (other.GetComponentInParent<Interactable>() != null)
         {
 			interactable = other.GetComponentInParent<Interactable> ();
-			interactable.ToggleInteractUI(true);
+			//interactable.ToggleInteractUI(true);
         }
 
     }
@@ -74,8 +74,8 @@ public class Player : MonoBehaviour
     {
         if (other.GetComponentInParent<Interactable> () != null)
         {
-			interactable.ToggleInteractUI(false);
-			interactable = null;
+			//interactable.ToggleInteractUI(false);
+			//nteractable = null;
         }
     }
 }
