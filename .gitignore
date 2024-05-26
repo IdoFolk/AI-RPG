@@ -72,3 +72,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /AI-RPG/Library
 /AI-RPG/Temp
+/AI-RPG/Logs
