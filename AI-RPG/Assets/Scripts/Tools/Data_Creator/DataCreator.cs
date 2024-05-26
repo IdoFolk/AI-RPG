@@ -20,6 +20,9 @@ public class DataCreator : OdinMenuEditorWindow {
 	public string abilitiesDatabasePath = "Assets/Data/Abilities/";
 
 	[HideInInspector]
+	public string itemsDatabasePath = "Assets/Data/Items/";
+	
+	[HideInInspector]
 	public string prefix = "Data_";
 
 	OdinMenuTree CurrentMenuTree;
@@ -54,9 +57,11 @@ public class DataCreator : OdinMenuEditorWindow {
 		tree.Selection.SupportsMultiSelect = false;
 		tree.Add ("Datas Creators/Create Resource", new DataAssetCreator(this,"Data_Resource"),EditorIcons.Plus);
 		tree.Add ("Datas Creators/Create Ability", new DataAssetCreator (this,"Data_Ability"), EditorIcons.Plus);
+		tree.Add ("Datas Creators/Create Item", new DataAssetCreator (this, "Data_Item"), EditorIcons.Plus);
 
 		tree.AddAllAssetsAtPath ("Datas/Resources", resourcesDatabasePath,typeof(DataCreator_Data));
 		tree.AddAllAssetsAtPath ("Datas/Abilities", abilitiesDatabasePath, typeof (DataCreator_Data));
+		tree.AddAllAssetsAtPath ("Datas/Items", itemsDatabasePath, typeof (DataCreator_Data));
 
 		var treeaa = new OdinMenuTree () {
 			{"Main",this,EditorIcons.House }
@@ -154,6 +159,10 @@ public class DataCreator : OdinMenuEditorWindow {
 					newData = ScriptableObject.CreateInstance<Data_Ability_Basic> ();
 					break;
 
+				case "Data_Item":
+					newData = ScriptableObject.CreateInstance<Data_Item> ();
+					break;
+
 				default:
 					break;
 			}
@@ -181,7 +190,11 @@ public class DataCreator : OdinMenuEditorWindow {
 				case "Data_Ability":
 					targetPath = dataCreator.abilitiesDatabasePath;
 					break;
-					
+
+				case "Data_Item":
+					targetPath = dataCreator.itemsDatabasePath;
+					break;
+
 
 				default:
 					break;

@@ -33,4 +33,16 @@ public static class Interfaces
 
 	}
 
+	public interface Equipable : InventoryHeldObject{
+
+		public EquipmentSlot GetAllowedEquipmentSlot();
+
+		enum EquipmentSlot {
+			Ring = 10,
+			Torso = 20,
+			Leggings = 30,
+			Head = 40,
+		}
+	}
+
 }
