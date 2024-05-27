@@ -7,10 +7,12 @@ using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Interfaces;
 
 public class PlayerController : SerializedMonoBehaviour
 {
 	public static PlayerController instance;
+
 
 	[SerializeField]
 	Character_Handler characterHandler;
@@ -169,7 +171,20 @@ public class PlayerController : SerializedMonoBehaviour
 
 	public void ToggleController (bool toggle) {
 		isControllerEnabled= toggle;
-		virtualCamera.gameObject.SetActive(toggle);
+
+		//not sure if needed
+		//previousFramemovementVector = toggle ? previousFramemovementVector : Vector3.zero;
+
+		//virtualCamera.gameObject.SetActive(toggle);
+	}
+
+	public void ToggleGraphics (bool toggle) {
+		graphics.SetActive (toggle);
+
+		//not sure if needed
+		//previousFramemovementVector = toggle ? previousFramemovementVector : Vector3.zero;
+
+		//virtualCamera.gameObject.SetActive(toggle);
 	}
 
 	private void TakeInputs (FrameInput newFrameInput) {
@@ -193,8 +208,12 @@ public class PlayerController : SerializedMonoBehaviour
 			if (isPortBuilding) {
 				ApplyPortBuilding ();
 			} else {
-				Interract ();
+				Interract(true);
 			}
+		}
+
+		if (frameInput.getButtonE) {
+			Interract (false);
 		}
 
 		if (frameInput.getInventory) {
@@ -222,11 +241,16 @@ public class PlayerController : SerializedMonoBehaviour
 	}
 	bool psFlag;
 	bool blockMovement;
+	float bufferedForwardInput;
+	Vector2 inertiaBufferingStrength = new Vector2 (7, 5);
 	private void MoveCharacter () {
 		if (frameInput == null)
 			return;
 
-		Vector3 movementVector = graphics.transform.forward * frameInput.getMovementInput.y + graphics.transform.up * yVelcoity; //+ graphics.transform.right * frameInput.getMovementInput.x;
+
+		bufferedForwardInput = Mathf.Lerp (bufferedForwardInput, frameInput.getMovementInput.y, Time.deltaTime * (frameInput.getMovementInput.y < bufferedForwardInput ? inertiaBufferingStrength.x : inertiaBufferingStrength.y));
+
+		Vector3 movementVector = graphics.transform.forward * bufferedForwardInput + graphics.transform.up * yVelcoity; //+ graphics.transform.right * frameInput.getMovementInput.x;
 
 		if (blockMovement) {
 			movementVector = Vector3.zero;
@@ -251,7 +275,7 @@ public class PlayerController : SerializedMonoBehaviour
 
 		movementVector = Vector3.Lerp (movementVector, previousFramemovementVector, 0.2f);
 
-		animator.SetFloat ("MovementBlend", frameInput.getMovementInput.y);
+		animator.SetFloat ("MovementBlend", bufferedForwardInput);
 		
 		characterController.Move (movementVector);
 
@@ -358,7 +382,7 @@ public class PlayerController : SerializedMonoBehaviour
 
 		Vector3 rotationVector = new Vector3 (0, yRotation, 0) * stats.getRotationSpeed;
 
-		rotationVector = Vector3.Lerp (rotationVector, previousFramerotationVector,0.1f);
+		rotationVector = Vector3.Lerp (rotationVector, previousFramerotationVector,Time.deltaTime * 0.1f);
 
 		if (rotationVector != Vector3.zero)
 		graphics.transform.Rotate (rotationVector,Space.Self);
@@ -396,48 +420,94 @@ public class PlayerController : SerializedMonoBehaviour
 		yVelcoity -= gravity;
 	}
 
-	private void DisableMovement () {
+	public void DisableMovement () {
 		blockMovement = true;
 	}
 
-	private void EnableMovement () {
+	public void EnableMovement () {
 		blockMovement = false;
 	}
 
 
-	public void Chop () {
-		if (!isGrounded ())
-			return;
+	//maybe all of this should happen in ability hander yeah probably 
+	public bool TryUseAbility (Data_Ability ability) {
+		if (!CheckAbilityConditions(ability))
+			return false;
 
-		int anim = Animator.StringToHash ("Chop");
+		int anim = Animator.StringToHash (ability.getAnimation);
 
-		animator.CrossFade (anim, 0.1f);
+		//should add ability sequencing - interaptable,cooldown, etc...
+		
+		animator.CrossFade (anim, ability.getAnimationTransitionDuration);
+
 		animator.Update (0);
+
+		if (ability.getAbilityMovementConfig.holdPosition) {
+			//idk
+			bufferedForwardInput = 0;
+			DisableMovement ();
+
+			//just testing fix to corutine probably? or in update might be safer probably update yeah,
+			Invoke ("EnableMovement", ability.getAbilityMovementConfig.duration);
+		}
+
+			return true;
 	}
 
-	void Interract () {
-		Debug.Log ("Interract");
+	bool CheckAbilityConditions (Data_Ability ability) {
+		if (ability.getAbilityConditions.isGrounded && !isGrounded ())
+			return false;
+
+		return true;
+	}
+
+	void Interract (bool isPyhsical) {
+		if (isPyhsical) {
+			PhysicalInerract ();
+			return;
+		}
+		Debug.Log (didInterractionRayHit);
+		if (didInterractionRayHit) {
+			if (interractionRayHit.transform.TryGetComponent<Interfaces.Interactable> (out Interfaces.Interactable interactable)) {
+				interactable.Interact ();
+			}
+
+			//if (interractionRayHit.transform.TryGetComponent<NPC> (out NPC npc)) {
+			//	UiManager.instance.OpenNpcMenu (npc);
+			//}
+
+		} else if(triggerInteractable != null) {
+			triggerInteractable.Interact ();
+		}
+
+
+
+
+	}
+
+
+	void PhysicalInerract () {
 		RaycastHit raycastHit;
 
-		if(carriedObject!= null) {
+		if (carriedObject != null) {
 			DetachCarriedObject ();
 			return;
 		}
 
 
-		if(didInterractionRayHit){
+		if (didInterractionRayHit) {
 			if (interractionRayHit.transform.TryGetComponent<CarryableObject> (out CarryableObject carryableObject)) {
 
 				Debug.Log (carryableObject);
 				carriedObject = carryableObject;
-				StartCoroutine (CarryObject());
+				StartCoroutine (CarryObject ());
 
 				return;
 			}
 
-			if (interractionRayHit.transform.TryGetComponent<Machine> (out Machine machine)) {
-				UiManager.instance.OpenMachineMenu(machine);
-			}
+			//if (interractionRayHit.transform.TryGetComponent<Machine> (out Machine machine)) {
+			//	UiManager.instance.OpenMachineMenu (machine);
+			//}
 
 
 			if (interractionRayHit.transform.TryGetComponent<OutputPort> (out OutputPort outputPort)) {
@@ -446,7 +516,7 @@ public class PlayerController : SerializedMonoBehaviour
 				currentBuiltPort.getPortConnectionLineRenderer.gameObject.SetActive (true);
 			}
 
-			
+
 		}
 	}
 
@@ -471,6 +541,23 @@ public class PlayerController : SerializedMonoBehaviour
 
 		}
 	}
+
+
+	Interactable triggerInteractable;
+	private void OnTriggerEnter (Collider other) {
+		if (other.GetComponentInParent<Interactable> () != null) {
+			triggerInteractable = other.GetComponentInParent<Interactable> ();
+			
+		}
+	}
+	private void OnTriggerExit (Collider other) {
+		if (other.GetComponentInParent<Interactable> () != null) {
+			triggerInteractable = null;
+		}
+	}
+
+
+
 
 	RaycastHit interractionRayHit;
 	bool didInterractionRayHit;
@@ -586,6 +673,8 @@ public class PlayerController : SerializedMonoBehaviour
 
 		int anim = Animator.StringToHash ("Jump");
 
+		
+
 		animator.CrossFade (anim, 0.1f);
 		animator.Update (0);
 
@@ -593,11 +682,11 @@ public class PlayerController : SerializedMonoBehaviour
 	}
 
 	bool isGrounded () {
-		if (!isInAir && characterController.isGrounded) {
-			
-			//need to stop player movement for sec
+		//if (isInAir && characterController.isGrounded) {
+		//	bufferedForwardInput *= 0.5f;
+		//	//need to stop player movement for sec
 
-		}
+		//}
 
 		isInAir = characterController.isGrounded;
 		return characterController.isGrounded;
@@ -645,6 +734,8 @@ public class PlayerController : SerializedMonoBehaviour
 	private void OnDrawGizmos () {
 
 		Gizmos.color = Color.blue;
+
+		if(Camera.main)
 		Gizmos.DrawLine (Camera.main.transform.position, Camera.main.transform.position +  Camera.main.transform.forward * 10);
 		//Physics.Raycast (/*transform.position + Vector3.up * 0.3f*/ Camera.main.transform.position, /*graphics.transform.forward*/ Camera.main.transform.forward, out interractionRayHit, 10, interractionLayer);
 	}

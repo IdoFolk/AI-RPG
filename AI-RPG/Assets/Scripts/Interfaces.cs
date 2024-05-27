@@ -3,10 +3,9 @@ using UnityEngine;
 public static class Interfaces 
 {
     public interface Interactable {
-		public void Interact (Player player);
+		public void Interact ();
 		public void CancelInteract ();
-		public void ToggleInteractUI (bool state);
-
+		
 		void OnInterractRTS (Group group);
 
 		void OnInterractPerson ();
@@ -32,6 +31,18 @@ public static class Interfaces
 	public interface InventoryHeldObject : UISlotData {
 
 
+	}
+
+	public interface Equipable : InventoryHeldObject{
+
+		public EquipmentSlot GetAllowedEquipmentSlot();
+
+		enum EquipmentSlot {
+			Ring = 10,
+			Torso = 20,
+			Leggings = 30,
+			Head = 40,
+		}
 	}
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Linq;
+using System;
 
 public class UI_Menu : SerializedMonoBehaviour
 {
@@ -11,7 +12,8 @@ public class UI_Menu : SerializedMonoBehaviour
         Crafting = 20,
         Map = 30,
         Stats = 40,
-    }
+		Chat = 50,
+	}
 
     [SerializeField]
     [HideReferenceObjectPicker]
@@ -19,6 +21,9 @@ public class UI_Menu : SerializedMonoBehaviour
     Dictionary<MenuCategory, UI_MenuCategory> menuCategorys = new();
 
     InventoryHandler userInventoryHandler;
+
+    public Delegates.Delegate_Void delegate_OnMenuClosed;
+    
 
 	public void InitInventoryCategory (InventoryHandler _userInventoryHandler = null) {
         if (menuCategorys.Keys.Contains (MenuCategory.Inventory))
@@ -65,15 +70,10 @@ public class UI_Menu : SerializedMonoBehaviour
 		
 	}
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private void OnDisable () {
+        delegate_OnMenuClosed?.Invoke ();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        //remove all listed delegates???
+        delegate_OnMenuClosed = null;
+	}
 }

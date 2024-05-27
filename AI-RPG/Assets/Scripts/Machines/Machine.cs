@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using System.Linq;
 using Unity.Mathematics;
 
-public class Machine : SerializedMonoBehaviour, Interfaces.OnPointed
+public class Machine : SerializedMonoBehaviour, Interfaces.OnPointed , Interfaces.Interactable
 {
 
     [Header("MachineSetup")]
@@ -203,6 +203,26 @@ public class Machine : SerializedMonoBehaviour, Interfaces.OnPointed
 		outlineEffect.DisableOutlines ();
 	}
 
+	public void Interact () {
+		UiManager.instance.OpenMachineMenu (this);
+	}
+
+	public void CancelInteract () {
+		//throw new System.NotImplementedException ();
+	}
+
+	public void OnInterractRTS (Group group) {
+		//throw new System.NotImplementedException ();
+	}
+
+	public void OnInterractPerson () {
+		//throw new System.NotImplementedException ();
+	}
+
+	public bool isInterractable () {
+		return true;
+	}
+
 	#endregion
 
 	void onCarriedStart () {
@@ -220,6 +240,7 @@ public class Machine : SerializedMonoBehaviour, Interfaces.OnPointed
 	void onCarriedEnd () {
 
 	}
+
 
 }
 

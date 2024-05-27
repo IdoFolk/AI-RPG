@@ -63,7 +63,7 @@
                     "name": "FlightMode",
                     "type": "Button",
                     "id": "b1da9e55-ef35-4a65-a227-c21e33ff6a94",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -108,7 +108,7 @@
                     "name": "E",
                     "type": "Button",
                     "id": "e40d32e9-f45a-421e-8206-66bda2ee8a9c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
