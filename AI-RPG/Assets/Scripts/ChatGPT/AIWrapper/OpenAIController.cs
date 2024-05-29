@@ -78,11 +78,13 @@ public class OpenAIController : MonoBehaviour
 		inputField.text = "";
 
 		// Send the entire chat to OpenAI to get the next message
-		var chatResult = await _api.Chat.CreateChatCompletionAsync (new ChatRequest () {
+		var chatResult = await _api.Chat.CreateChatCompletionAsync (new ChatRequest() {
 			Model = Model.ChatGPTTurbo,
 			Temperature = _config.Creativity,
 			MaxTokens = MAX_TOKENS,
-			Messages = _messages
+			Messages = _messages,
+			//ResponseFormat = ChatRequest.ResponseFormats.JsonObject,
+			
 		});
 
 		// Get the response message
@@ -97,7 +99,7 @@ public class OpenAIController : MonoBehaviour
 		_messages.Add (responseMessage);
 
 		// Update the text field with the response
-		textField.text = string.Format ("You: {0}\n\nGuard: {1}", userMessage.TextContent, responseMessage.TextContent);
+		textField.text = string.Format ($"You: {userMessage.TextContent}\n\n{_config.Name}: {responseMessage.TextContent}");
 
 
 		//var testost = await api.TextToSpeech.SaveSpeechToFileAsync (responseMessage.Content, "D:\\Assets\\UnityAiSpechTest");
