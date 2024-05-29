@@ -5238,7 +5238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945009062746960038}
   - component: {fileID: 3938242917724355992}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}

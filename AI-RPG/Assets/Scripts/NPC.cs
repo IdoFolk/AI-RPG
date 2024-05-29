@@ -2,11 +2,11 @@ using System;
 using Unity.Cinemachine;
 using UnityEngine;
 using static Interfaces;
-public class NPC : MonoBehaviour , Interactable
+public class NPC : MonoBehaviour , Interactable, OnPointed
 {
     [SerializeField] private NPCAIConfig aiConfig;
     [SerializeField] private OpenAIController openAIController;
-    [SerializeField] private CinemachineVirtualCameraBase dialogCamera;
+    [SerializeField] private CinemachineCamera dialogCamera;
     [SerializeField] private Canvas dialogCanvas;
     [SerializeField] private Canvas interactCanvas;
     private Player _player;
@@ -30,25 +30,49 @@ public class NPC : MonoBehaviour , Interactable
 
 	#region Interactable
 
-	public void Interact(Player player)
+	public void Interact()
     {
-        _player = player;
-        dialogCanvas.gameObject.SetActive(true);
+        Debug.Log ("Interractnpc");
+		
+		PlayerController.instance.ToggleGraphics (false);
+
+        UiManager.instance.OpenNpcMenu (this);
+        
+
+        //dialogCanvas.gameObject.SetActive(true);
         dialogCamera.gameObject.SetActive(true);
         interactCanvas.gameObject.SetActive(false);
-    }
-    public void CancelInteract()
+		
+	}
+	public void CancelInteract()
     {
-        dialogCanvas.gameObject.SetActive(false);
+        PlayerController.instance.ToggleGraphics (true);
+
+        //dialogCanvas.gameObject.SetActive(false);
         dialogCamera.gameObject.SetActive(false);
         interactCanvas.gameObject.SetActive(true);
-        _player.CancelInteract();
+      
     }
 
-    public void ToggleInteractUI(bool state)
-    {
-        interactCanvas.gameObject.SetActive(state);
-    }
+	public void OnInterractRTS (Group group) {
+		throw new NotImplementedException ();
+	}
+
+	public void OnInterractPerson () {
+		throw new NotImplementedException ();
+	}
+
+	public bool isInterractable () {
+		return true;
+	}
+
+	public void onPointed () {
+		interactCanvas.gameObject.SetActive (true);
+	}
+
+	public void onPointRemove () {
+		interactCanvas.gameObject.SetActive (false);
+	}
 
 	#endregion
 }
