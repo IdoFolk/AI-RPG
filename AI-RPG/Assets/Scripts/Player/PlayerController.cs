@@ -18,6 +18,12 @@ public class PlayerController : SerializedMonoBehaviour
 	Character_Handler characterHandler;
 	public Character_Handler getCharacterHandler => characterHandler;
 
+
+	[SerializeField]
+	InventoryHandler hudInventoryHandler;
+	public InventoryHandler getHudInventoryHandler => hudInventoryHandler;
+
+
 	[SerializeField]
 	Character_ShieldHandler characterShieldHandler;
 

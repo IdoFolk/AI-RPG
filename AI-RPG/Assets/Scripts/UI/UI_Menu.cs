@@ -4,6 +4,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Linq;
 using System;
+using UnityEngine.UI;
 
 public class UI_Menu : SerializedMonoBehaviour
 {
@@ -20,10 +21,20 @@ public class UI_Menu : SerializedMonoBehaviour
     [ListDrawerSettings]
     Dictionary<MenuCategory, UI_MenuCategory> menuCategorys = new();
 
+	public Dictionary<MenuCategory, UI_MenuCategory> getMenuCategories => menuCategorys;
+
     InventoryHandler userInventoryHandler;
 
     public Delegates.Delegate_Void delegate_OnMenuClosed;
-    
+
+
+	GraphicRaycaster graphicRaycaster;
+	public GraphicRaycaster getGraphicRaycaster => graphicRaycaster;
+
+
+	private void Start () {
+		graphicRaycaster = GetComponent<GraphicRaycaster> ();
+	}
 
 	public void InitInventoryCategory (InventoryHandler _userInventoryHandler = null) {
         if (menuCategorys.Keys.Contains (MenuCategory.Inventory))

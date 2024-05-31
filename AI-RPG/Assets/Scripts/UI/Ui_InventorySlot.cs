@@ -35,6 +35,7 @@ public class Ui_InventorySlot : MonoBehaviour , IPointerEnterHandler, IPointerEx
 	Transform prevDataImageParent;
 	Canvas ownerMenuCanvas;
 	GraphicRaycaster ownerMenuGraphicRaycaster;
+	public GraphicRaycaster getOwnerMenuGraphicRaycaster => ownerMenuGraphicRaycaster;
 
 	//public Delegate onSelected;
 
@@ -44,6 +45,7 @@ public class Ui_InventorySlot : MonoBehaviour , IPointerEnterHandler, IPointerEx
 
 		if(!ownerMenuGraphicRaycaster || ownerMenuGraphicRaycaster.gameObject != ownerMenuCanvas.gameObject)
 		ownerMenuGraphicRaycaster = ownerMenuCanvas.GetComponent<GraphicRaycaster>();
+		//ownerMenuGraphicRaycaster = UiManager.instance.GetComponent<GraphicRaycaster> ();
 
 		if (slotData == null) {
             quantityText.gameObject.SetActive (false);
@@ -67,6 +69,7 @@ public class Ui_InventorySlot : MonoBehaviour , IPointerEnterHandler, IPointerEx
 	void OnSlotSelected () {
 		if (slotData == null)
 			return;
+
 		prevDataImageParent = dataImage.transform.parent;
 		dataImage.transform.parent = transform.parent;
 
@@ -107,28 +110,52 @@ public class Ui_InventorySlot : MonoBehaviour , IPointerEnterHandler, IPointerEx
 	List<RaycastResult> pointerUpRaycastResolts = new List<RaycastResult> ();
 	
 	public void OnPointerUp (PointerEventData eventData) {
+		Debug.Log ("Up pre check");
+		Debug.Log (slotData);
+
 		if (slotData == null)
 			return;
+
+		Debug.Log (gameObject,gameObject);
 
 		dataImage.transform.parent = prevDataImageParent;
 		dataImage.rectTransform.localPosition = Vector3.zero;
 
 		pointerUpRaycastResolts.Clear ();
-		ownerMenuGraphicRaycaster.Raycast (eventData, pointerUpRaycastResolts);
 
-		foreach(RaycastResult raycastResult in pointerUpRaycastResolts) {
+		List<GraphicRaycaster> optionalGraphicRaycasters = new();
+
+		foreach (UI_Menu menu in UiManager.instance.getCurrentOpenMenus) {
+			foreach (KeyValuePair<UI_Menu.MenuCategory, UI_MenuCategory> pair in menu.getMenuCategories) {
+				if(pair.Key == UI_Menu.MenuCategory.Inventory) {
+					menu.getGraphicRaycaster.Raycast (eventData, pointerUpRaycastResolts);
+					//optionalGraphicRaycasters.Add (menu.getGraphicRaycaster);
+					break;
+				}
+					
+			}
+		}
+
+
+		//ownerMenuGraphicRaycaster.Raycast (eventData, pointerUpRaycastResolts);
+
+		//Debug.Log (ownerMenuGraphicRaycaster, ownerMenuGraphicRaycaster);
+		//Debug.Log ("Up after check");
+		foreach (RaycastResult raycastResult in pointerUpRaycastResolts) {
+			Debug.Log ("result");
 			if (raycastResult.gameObject.TryGetComponent<Ui_InventorySlot> (out Ui_InventorySlot pointedSlotOnPointerUp)){
-				if(pointedSlotOnPointerUp != this) {
+				Debug.Log ("comp");
+				if (pointedSlotOnPointerUp != this) {
 					if (pointedSlotOnPointerUp.getSlotData == null) {
 						pointedSlotOnPointerUp.SyncSlot (slotData, quantity);
 						SyncSlot (null, 0);
+						Debug.Log ("Up");
 						break;
 					}
 
 					if(pointedSlotOnPointerUp.getSlotData != null) {
 						UISlotData prevSlotData = slotData;
 						float prevQuantity = quantity;
-
 						SyncSlot (pointedSlotOnPointerUp.slotData, pointedSlotOnPointerUp.quantity);
 						pointedSlotOnPointerUp.SyncSlot (prevSlotData, prevQuantity);
 						break;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.WebSockets;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
@@ -13,7 +14,7 @@ public class UiManager : MonoBehaviour
     Camera camera;
 
 	[SerializeField]
-    UI_PlayerHud playerHud;
+    UI_Menu playerHud;
 
 	[SerializeField]
 	UI_Menu playerMenu;
@@ -32,6 +33,7 @@ public class UiManager : MonoBehaviour
 	// Start is called before the first frame update
 
 	List<UI_Menu> currentOpenMenus = new();
+	public List<UI_Menu> getCurrentOpenMenus => currentOpenMenus;
 
 	FrameInput frameInput;
 
@@ -100,7 +102,7 @@ public class UiManager : MonoBehaviour
 		playerMenu.OnSelectCategory (category);
 		currentOpenMenus.Add (playerMenu);
 
-		ClosePlayerHud ();
+		//ClosePlayerHud ();
 
 		uiInputEnabled = true;
 	}
@@ -148,7 +150,9 @@ public class UiManager : MonoBehaviour
 	}
 	void OpenPlayerHud () {
 		playerHud.gameObject.SetActive (true);
-    }
+		playerHud.InitInventoryCategory (PlayerController.instance.getHudInventoryHandler);
+		playerHud.OnSelectCategory (UI_Menu.MenuCategory.Inventory);
+	}
 
 	void ClosePlayerHud () {
         playerHud.gameObject.SetActive(false);
